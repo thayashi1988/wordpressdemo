@@ -7,16 +7,9 @@
 :root {
   --color: red;
 }
-// @font-face {
-//   font-family: "Noto Sans JP";
-//   src: url("../fonts/NotoSansJP-Regular.otf") format("opentype"),
-//     url("../fonts/NotoSansJP-Bold.otf") format("opentype");
-// }
-
 @font-face {
-  font-family: 'MaboroshinoNijimiMincho';
-  src: url('../fonts/MaboroshinoNijimiMincho.otf') format('opentype');
-  // src: url("../fonts/MaboroshinoNijimiMincho.woff") format("woff");
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.otf') format('opentype'), url('../fonts/Montserrat-Bold.otf') format('opentype');
   font-display: swap;
 }
 
@@ -66,7 +59,3 @@ p {
     @include font-size(14);
   }
 }
-
-// button {
-//   @include transition();
-// }
