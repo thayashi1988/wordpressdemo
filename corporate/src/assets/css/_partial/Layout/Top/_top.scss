@@ -22,8 +22,33 @@
     }
   }
   &-service {
+    max-width: var.$md_width;
+    margin: 0 auto;
     .l-heading-2-container {
       margin-bottom: 20px;
+    }
+  }
+  &-works {
+    max-width: 1260px;
+    margin: 0 auto;
+    .l-heading-2-container {
+      margin-bottom: 20px;
+    }
+    .l-slide {
+      max-width: 750px;
+    }
+    &-bg {
+      background: linear-gradient(90deg, #fff 0%, #fff 40%, #f0f0f0 40%, #f0f0f0 100%);
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+    &-inner {
+      display: flex;
+      align-items: center;
+    }
+    &-detail {
+      flex-grow: 1;
+      margin: 0 20px;
     }
   }
 }
