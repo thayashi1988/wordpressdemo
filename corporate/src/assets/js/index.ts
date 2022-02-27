@@ -19,19 +19,19 @@ import { basic } from './modules/basic';
 
 window.addEventListener('DOMContentLoaded', () => {
   // kick off the polyfill!
-  smoothscroll.polyfill();
+  // smoothscroll.polyfill();
 
-  test($);
-  UA();
-  foreachtest();
-  smoothScroll();
-  countdowntimer();
-  observer();
-  apiAxios(axios);
-  apiFetch();
-  apiLocal('../assets/data/sample.json'); // モジュールで読み込みの場合
+  // test($);
+  // UA();
+  // foreachtest();
+  // smoothScroll();
+  // countdowntimer();
+  // observer();
+  // apiAxios(axios);
+  // apiFetch();
+  // apiLocal('../assets/data/sample.json'); // モジュールで読み込みの場合
   // apiLocal(); // import文読み込みの場合
-  basic();
+  // basic();
 
   console.log('This is typescript!!!!!!!!!!!!!!');
 });
