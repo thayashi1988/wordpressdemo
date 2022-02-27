@@ -485,8 +485,8 @@ template {
 }
 
 @font-face {
-  src: url("../fonts/MaboroshinoNijimiMincho.otf") format("opentype");
-  font-family: "MaboroshinoNijimiMincho";
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype"), url("../fonts/Montserrat-Bold.otf") format("opentype");
+  font-family: "Montserrat";
   font-display: swap;
 }
 * {
