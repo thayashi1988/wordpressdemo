@@ -1,0 +1,30 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+
+/*------------------------
+  section
+------------------------*/
+/////////////////////////
+// section
+////////////////////////
+.l-section {
+  width: 100%;
+  &:not(:first-of-type) {
+    margin-top: 65px;
+    @include mq(max, 0, var.$sp) {
+      @include sizeVw(mt, 65);
+    }
+  }
+  &:last-child {
+    margin-top: 91px;
+    @include mq(max, 0, var.$sp) {
+      @include sizeVw(mt, 91);
+    }
+  }
+  &-inner {
+    max-width: var.$content_width;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}

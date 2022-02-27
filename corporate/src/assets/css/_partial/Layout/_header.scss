@@ -1,0 +1,30 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+
+/*------------------------
+  header
+------------------------*/
+/////////////////////////
+// header
+////////////////////////
+.l-header {
+  min-height: 65px;
+  background-color: var.$bg_header;
+  padding: 23px 30px;
+  &-inner {
+    display: flex;
+    align-items: center;
+    max-width: var.$content_width;
+    margin: 0 auto;
+  }
+}
+
+.m-header {
+  &-logo {
+    margin-right: auto;
+    img {
+      vertical-align: middle;
+    }
+  }
+}

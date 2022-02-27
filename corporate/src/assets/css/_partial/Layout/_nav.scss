@@ -1,0 +1,48 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+
+/*------------------------
+  nav
+------------------------*/
+/////////////////////////
+// nav
+////////////////////////
+.l-nav {
+  &-list {
+    display: flex;
+  }
+}
+
+.m-nav {
+  &-list {
+    &-item {
+      &:not(:first-child) {
+        margin-left: 25px;
+      }
+    }
+  }
+  &-link {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      transition: width 0.3s ease;
+    }
+    &:hover {
+      @include mq(min, var.$sp, 0) {
+        text-decoration: none;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

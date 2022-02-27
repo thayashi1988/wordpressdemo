@@ -1,0 +1,16 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+
+/*------------------------
+  main
+------------------------*/
+/////////////////////////
+// main
+////////////////////////
+.l-main {
+  margin-top: 70px;
+  @include mq(max, 0, var.$sp) {
+    @include sizeVw(mt, 47);
+  }
+}
