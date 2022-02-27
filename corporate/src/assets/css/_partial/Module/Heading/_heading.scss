@@ -1,0 +1,40 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  heading
+------------------------*/
+/////////////////////////
+// heading
+////////////////////////
+.l-heading {
+  &-2 {
+    &-container {
+    }
+  }
+  @include mq(max, 0, var.$sp) {
+    @include sizeVw(mt, 47);
+  }
+}
+
+.m-heading {
+  &-top {
+    color: var.$sub;
+    @include font-size(36);
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-left {
+      align-items: flex-start;
+    }
+    &-sub {
+      @include font-size(13);
+      font-weight: bold;
+      &-left {
+        align-self: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  top
+------------------------*/
+/////////////////////////
+// top
+////////////////////////
+.l-top {
+  &-news {
+    display: flex;
+    justify-content: center;
+    max-width: 920px;
+    margin: 0 auto;
+    .l-news-list {
+      margin-left: 50px;
+      flex-basis: calc(100% - 170px);
+    }
+    .l-heading-2-container {
+      flex-basis: 170px;
+    }
+  }
+}

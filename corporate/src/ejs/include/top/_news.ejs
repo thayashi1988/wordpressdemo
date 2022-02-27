@@ -22,7 +22,7 @@
 %>
 <div class="l-top-news">
   <div class="l-heading-2-container">
-    <h2 class="m-heading-top">NEWS<span class="m-heading-top-sub">お知らせ</span></h2>
+    <h2 class="m-heading-top m-heading-top-left">NEWS<span class="m-heading-top-sub m-heading-top-sub-left">お知らせ</span></h2>
   </div>
   <ul class="l-news-list">
     <%
@@ -31,11 +31,9 @@
     %>
     <li class="l-news-list-item">
       <dl class="m-news-detail">
-        <dt class="m-news-detail-date">
-          <div class="m-news-detail-flex">
-            <time class="m-news-detail-date" datetime="<%- date %>"><%- elem.date %></time>
-            <span class="m-news-detail-label"><%- elem.label %></span>
-          </div>
+        <dt class="m-news-detail-info">
+          <time class="m-news-detail-date" datetime="<%- date %>"><%- elem.date %></time>
+          <span class="m-news-detail-label"><%- elem.label %></span>
         </dt>
         <dd class="m-news-detail-body">
           <a href="<%- elem.href %>" class="m-link"><%- elem.txt %></a>
