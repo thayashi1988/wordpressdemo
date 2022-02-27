@@ -1,5 +1,40 @@
-<div class="l-header">
+<%
+	const NAVITEMS = [
+		{
+			name: 'NEWS',
+			href: '/news/',
+		},
+		{
+			name: 'SERVICE',
+			href: '/service/',
+		},
+		{
+			name: 'WORKS',
+			href: '/works/',
+		},
+		{
+			name: 'COMPANY',
+			href: '/company/',
+		},
+		{
+			name: 'RECRUIT',
+			href: '/recruit/',
+		},
+		{
+			name: 'CONTACT',
+			href: '/contact/',
+		}
+]
+%>
+<header class="l-header">
 	<div class="l-header-inner">
-		<!-- <h1 class="m-heading-1"><a href="http://soma-yaki.com/" target="_blank" rel="noopener noreferrer"><img src="<%#= IMG %>logo.png" width="236" height="48" alt="松永陶器店 MATSUNAGA"></a></h1> -->
+		<p class="m-header-logo"><a href="/" class="m-header-logo-link"><img src="<%= IMG %>logo.svg" width="160" height="17" alt="PON DESIGN"></a></p>
+		<nav class="l-nav">
+			<ul class="l-nav-list">
+				<% NAVITEMS.forEach((element,index) => { %>
+				<li class="m-nav-list-item"><a href="<%- element.href %>" class="m-nav-link"><%- element.name %></a></li>
+				<% }); %>
+			</ul>
+		</nav>
 	</div><!-- ./l-header-inner -->
-</div><!-- ./l-header -->
+</header><!-- ./l-header -->
