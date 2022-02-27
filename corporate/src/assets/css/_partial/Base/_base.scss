@@ -68,6 +68,7 @@ p {
   line-height: 1.6;
   letter-spacing: 0.05em;
   word-break: break-all;
+  // background: var.$btn;
   @include mq(max, 0, var.$md) {
     @include font-size(14);
     line-height: 1.7;
