@@ -17,8 +17,15 @@
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/Montserrat-Regular.otf') format('opentype'), url('../fonts/Montserrat-Bold.otf') format('opentype');
+  src: url('../fonts/Montserrat-Regular.otf') format('opentype');
   font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.otf') format('opentype');
+  font-weight: bold;
 }
 
 * {
@@ -43,17 +50,20 @@ body {
 a {
   @include font-size(15);
   line-height: 1.6;
+  display: inline-block;
   text-decoration: none;
   word-break: break-all;
   @include transition();
   cursor: pointer;
+  text-underline-offset: 3px;
   @include mq(max, 0, var.$md) {
     @include font-size(14);
     line-height: 1.7;
   }
   &:hover {
     @include mq(min, 0, var.$md) {
-      opacity: 0.7;
+      text-decoration: underline;
+      // opacity: 0.7;
     }
   }
 }
