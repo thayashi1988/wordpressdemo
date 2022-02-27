@@ -1,0 +1,61 @@
+{
+  "default": {
+    "description": "default",
+    "keywords": "default",
+    "site_name": "default",
+    "title": "default | okinawa",
+    "url": "default",
+    "image": "default",
+    "canonical": "default"
+  },
+
+  "index": {
+    "description": "沖縄在住のWebコーダーのブログ、ポートフォリオサイトです。今までのHTML、CSS、javascriptの経験や実績を紹介します。",
+    "keywords": "沖縄,コーダー,ブログ,ポートフォリオ,HTML,CSS,javascript,実績,紹介",
+    "site_name": "ポートフォリオサイト",
+    "title": "ポートフォリオサイト | okinawa",
+    "url": "https://portfoliodemookinawa.herokuapp.com/",
+    "image": "https://portfoliodemookinawa.herokuapp.com/assets/img/ogp.png",
+    "canonical": "https://portfoliodemookinawa.herokuapp.com/"
+  },
+
+  "post": {
+    "description": "沖縄在住のWebコーダーのブログ、ポートフォリオサイトです。今までのHTML、CSS、javascriptの経験や実績を紹介します。",
+    "keywords": "沖縄,コーダー,ブログ,ポートフォリオ,HTML,CSS,javascript,実績,紹介",
+    "site_name": "ポートフォリオサイト",
+    "title": "ブログ | ポートフォリオサイト | okinawa",
+    "url": "https://portfoliodemookinawa.herokuapp.com/post/",
+    "image": "https://portfoliodemookinawa.herokuapp.com/assets/img/ogp.png",
+    "canonical": "https://portfoliodemookinawa.herokuapp.com/post/"
+  },
+
+  "contact": {
+    "description": "沖縄在住のWebコーダーのブログ、ポートフォリオサイトのお問い合わせページです。今までのHTML、CSS、javascriptの経験や実績を紹介します。",
+    "keywords": "沖縄,コーダー,ブログ,,お問い合わせ,ポートフォリオ,HTML,CSS,javascript,実績,紹介",
+    "site_name": "ポートフォリオサイト",
+    "title": "お問い合わせ | ポートフォリオサイト | okinawa",
+    "url": "https://portfoliodemookinawa.herokuapp.com/contact/",
+    "image": "https://portfoliodemookinawa.herokuapp.com/assets/img/ogp.png",
+    "canonical": "https://portfoliodemookinawa.herokuapp.com/contact/"
+  },
+
+  "youtube": {
+    "description": "沖縄在住のWebコーダーのブログ、ポートフォリオサイトのyoutube検索ツールページです。今までのHTML、CSS、javascriptの経験や実績を紹介します。",
+    "keywords": "沖縄,コーダー,ブログ,ポートフォリオ,HTML,CSS,javascript,実績,紹介,youtube,検索,API",
+    "site_name": "ポートフォリオサイト",
+    "title": "youtube検索ツール | okinawa",
+    "url": "https://portfoliodemookinawa.herokuapp.com/_youtube/youtube.html",
+    "image": "https://portfoliodemookinawa.herokuapp.com/assets/img/ogp.png",
+    "canonical": "https://portfoliodemookinawa.herokuapp.com/_youtube/youtube.html/"
+  },
+
+  "module": {
+    "description": "沖縄在住のWebコーダーのブログ、ポートフォリオサイトのモジュールページです。今までのHTML、CSS、javascriptの経験や実績を紹介します。",
+    "keywords": "沖縄,コーダー,ブログ,ポートフォリオ,HTML,CSS,javascript,実績,紹介",
+    "site_name": "ポートフォリオサイト",
+    "title": "モジュールページ | okinawa",
+    "url": "https://portfoliodemookinawa.herokuapp.com/_modules.html",
+    "image": "https://portfoliodemookinawa.herokuapp.com/assets/img/ogp.png",
+    "canonical": "https://portfoliodemookinawa.herokuapp.com/_modules.html"
+  }
+}
