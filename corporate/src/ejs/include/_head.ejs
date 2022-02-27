@@ -14,13 +14,13 @@
 %>
 <%
   PATH = './';
-  TITLE = '大堀相馬焼 松永陶器店│LINE公式アカウントがOPENしました';
-  DESCRIPTION = '松永陶器店 MATSUNAGAのLINE公式アカウントがOPENしましたのページです。';
+  TITLE = 'PON DESING';
+  DESCRIPTION = 'PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。';
   // KEYWORDS = ''
-  URL = 'http://soma-yaki.com/linefriend/index.html';
-  OG_SITENAME = '大堀相馬焼 松永陶器店';
-  OG_TITLE = '大堀相馬焼 松永陶器店|LINE公式アカウントがOPENしました'
-  OG_IMG = 'http://soma-yaki.com/linefriend/assets/img/ogp/ogp.png';
+  URL = 'http://localhost:3000/index.html';
+  OG_SITENAME = 'PON DESING';
+  OG_TITLE = 'PON DESING'
+  OG_IMG = 'http://localhost:3000/assets/img/ogp/ogp.jpg';
   FAVICON = 'http://localhost:3000/favicon.ico';
   APPLE_ICON = 'http://localhost:3000/apple-touch-icon.png';
 %>
@@ -30,6 +30,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="format-detection" content="telephone=no">
+<meta name="description" content="<%- DESCRIPTION %>" />
+<meta property="og:description" content="<%- DESCRIPTION %>">
 <meta property="og:site_name" content="<%= OG_SITENAME %>">
 <meta property="og:title" content="<%= OG_TITLE %>">
 <meta property="og:url" content="<%= URL %>">
