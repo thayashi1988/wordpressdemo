@@ -2,33 +2,32 @@
 //  variables
 ////////////////
 //画面幅
-// $content_width: 1440px;
-$content_width: 960px;
-$sp: 599; // メディアクエリ、mixinに影響あり
+$content_width: 1440px;
+$sm_width: 750px;
+$md_width: 1100px;
+$lg_width: 1300px;
+$inner_width: 960px;
+$sp: 375 * 2; // デザインカンプの幅
 
 //フォント
 // $font: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
 // $font-noto: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-//   "Hiragino Sans", Meiryo, sans-serif;
-$font: 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
-$maborosi: 'MaboroshinoNijimiMincho', 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+// //   "Hiragino Sans", Meiryo, sans-serif;
+// $font: 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+$font: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'メイリオ', sans-serif;
+$maborosi: 'Montserrat', sans-serif;
 
 //カラー
-$main: #313131;
-$sub: #c4a31f;
-$line: #00b900;
-// $accent: #aaa;
-// $bg_main: #fff;
+$main: #333;
+$sub: #391e88;
+$bg_gray: #f7f7f7;
+$bg_black: #120e19;
 
 //パス
 $img_path: '/assets/img/';
-// $icon_path: "/assets/img/icon/";
-// $logo_path: "/assets/img/logo/";
+$bg_path: '/assets/img/bg/';
 
 //ブレイクポイント
-// $bp-tab: 'screen and (max-width: 1024px)';
-// $bp-sp: "screen and (max-width: 768px)";
-// $bp-tab: 'screen and (max-width: 1024px)';
 $bp-sp: 'screen and (max-width: 599px)';
 $lg: '960';
 $md: '768';

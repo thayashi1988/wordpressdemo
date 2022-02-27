@@ -13,7 +13,7 @@
 //   margin-bottom: 40px;
 // }
 //mq
-@mixin mq($val, $min: $sm, $max: $lg) {
+@mixin mq($val, $min: $md, $max: $md) {
   @if $val == max {
     @media screen and (max-width: ($max + px)) {
       @content;
@@ -44,41 +44,32 @@
 // // @include sizeVw(fs, 60);  font-size
 // // sizeVW
 @mixin sizeVw($property, $size) {
-  $winW: $sm; // デザインカンプの幅を設定
+  $winW: $sp; // デザインカンプの幅を設定
   @if $property == 'fs' {
-    // font-size: ($size / $winW) * 100 + vw;
     font-size: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'mt' {
-    // margin-top: ($size / $winW) * 100 + vw;
     margin-top: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'mr' {
-    // margin-right: ($size / $winW) * 100 + vw;
     margin-right: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'mb' {
-    // margin-bottom: ($size / $winW) * 100 + vw;
     margin-bottom: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'ml' {
-    // margin-left: ($size / $winW) * 100 + vw;
     margin-left: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'pt' {
-    // margin-top: ($size / $winW) * 100 + vw;
     padding-top: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'pr' {
-    // margin-right: ($size / $winW) * 100 + vw;
     padding-right: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'pb' {
-    // margin-bottom: ($size / $winW) * 100 + vw;
     padding-bottom: calc((#{$size} / #{$winW}) * 100vw);
   }
   @if $property == 'pl' {
-    // margin-left: ($size / $winW) * 100 + vw;
     padding-left: calc((#{$size} / #{$winW}) * 100vw);
   }
 }

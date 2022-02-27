@@ -157,7 +157,7 @@ btn
   display: inline-block;
   width: 100%;
   &#{$this}-line {
-    color: var.$line;
+    // color: var.$line;
     font-weight: bold;
     // padding: 35px 50px;
     padding: 17px 15px 17px 35px;

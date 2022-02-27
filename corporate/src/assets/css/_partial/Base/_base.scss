@@ -5,7 +5,14 @@
   base css
 ------------------------*/
 :root {
-  --color: red;
+  --color_main: #333;
+  --color_sub: #391e88;
+  --bg_gray: #f7f7f7;
+  --bg_black: #120e19;
+  --width_content: 1440px;
+  --width_sm: 750px;
+  --width_md: 1100px;
+  --width_lg: 1300px;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -23,24 +30,29 @@ html {
 
 body {
   font-family: var.$font;
-  @include font-size(16);
+  @include font-size(15);
   color: var.$main;
   line-height: 1.6;
+  @include mq(max, 0, var.$md) {
+    @include font-size(14);
+    line-height: 1.7;
+  }
 }
 
 a {
-  @include font-size(16);
+  @include font-size(15);
+  line-height: 1.6;
   text-decoration: none;
   word-break: break-all;
   @include transition();
   cursor: pointer;
-  @include mq(max, 0, 599) {
+  @include mq(max, 0, var.$md) {
     @include font-size(14);
+    line-height: 1.7;
   }
   &:hover {
-    opacity: 0.7;
-    @include mq(max, 0, 599) {
-      opacity: 1;
+    @include mq(min, 0, var.$md) {
+      opacity: 0.7;
     }
   }
 }
@@ -52,10 +64,12 @@ img {
 }
 
 p {
-  @include font-size(16);
-  letter-spacing: 0.6px;
+  @include font-size(15);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
   word-break: break-all;
-  @include mq(max, 0, 599) {
+  @include mq(max, 0, var.$md) {
     @include font-size(14);
+    line-height: 1.7;
   }
 }
