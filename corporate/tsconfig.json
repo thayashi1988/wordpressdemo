@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    // "experimentalAsyncFunctions": true,
+    // "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true, // ローカルのJSONファイルを読み込む
+    "allowSyntheticDefaultImports": true, // import記述を許可する
+    // "noEmit": true, // typescriptのコンパイルファイルを出力するか
+    // "noUnusedLocals": true, // 使用していない変数のワーニング
+    // "skipLibCheck": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    // "sourceMap": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist/**/*"
+  ]
+}

@@ -1,0 +1,70 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+/*///////////////////////
+utility
+///////////////////////*/
+////////////////////////
+// text-align
+////////////////////////
+.m-ac {
+  text-align: center !important;
+}
+.m-al {
+  text-align: left !important;
+}
+.m-ar {
+  text-align: right !important;
+}
+
+////////////////////////
+// text-style
+////////////////////////
+.m-bold {
+  font-weight: bold !important;
+}
+
+////////////////////////
+// display
+////////////////////////
+.m-hide {
+  &-pc {
+    display: none;
+    @include mq(max, 0, var.$sp) {
+      display: block;
+    }
+  }
+  &-sp {
+    display: block;
+    @include mq(max, 0, var.$sp) {
+      display: none;
+    }
+  }
+}
+
+////////////////////////
+// width
+////////////////////////
+@for $i from 0 through 20 {
+  .m-w-#{$i * 5} {
+    width: (#{$i * 5%}) !important;
+  }
+}
+
+////////////////////////
+// margin-top
+////////////////////////
+@for $i from 0 through 10 {
+  .m-mt-#{$i * 5} {
+    margin-top: #{$i * 5}px !important;
+  }
+}
+
+////////////////////////
+// margin-bottom
+////////////////////////
+@for $i from 0 through 10 {
+  .m-mb-#{$i * 5} {
+    margin-bottom: #{$i * 5}px !important;
+  }
+}

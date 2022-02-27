@@ -1,0 +1,72 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+/*------------------------
+  base css
+------------------------*/
+:root {
+  --color: red;
+}
+// @font-face {
+//   font-family: "Noto Sans JP";
+//   src: url("../fonts/NotoSansJP-Regular.otf") format("opentype"),
+//     url("../fonts/NotoSansJP-Bold.otf") format("opentype");
+// }
+
+@font-face {
+  font-family: 'MaboroshinoNijimiMincho';
+  src: url('../fonts/MaboroshinoNijimiMincho.otf') format('opentype');
+  // src: url("../fonts/MaboroshinoNijimiMincho.woff") format("woff");
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var.$font;
+  @include font-size(16);
+  color: var.$main;
+  line-height: 1.6;
+}
+
+a {
+  @include font-size(16);
+  text-decoration: none;
+  word-break: break-all;
+  @include transition();
+  cursor: pointer;
+  @include mq(max, 0, 599) {
+    @include font-size(14);
+  }
+  &:hover {
+    opacity: 0.7;
+    @include mq(max, 0, 599) {
+      opacity: 1;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+p {
+  @include font-size(16);
+  letter-spacing: 0.6px;
+  word-break: break-all;
+  @include mq(max, 0, 599) {
+    @include font-size(14);
+  }
+}
+
+// button {
+//   @include transition();
+// }

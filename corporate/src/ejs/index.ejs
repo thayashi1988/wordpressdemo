@@ -1,0 +1,69 @@
+<%
+  IMG = './assets/img/';
+  RESOURCE = './assets/';
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./include/_head'); %>
+<body>
+
+<nav id="scroll-menu">
+  <ul class="scroll-menu-inner">
+    <li id="category1">カテゴリ１</li>
+    <li id="category2">カテゴリ２</li>
+    <li id="category3">カテゴリ３</li>
+    <li id="category4">カテゴリ４</li>
+    <li id="category5">カテゴリ５</li>
+    <li id="category6">カテゴリ６</li>
+    <li id="category7">カテゴリ７</li>
+    <li id="category8">カテゴリ８</li>
+    <li id="category9">カテゴリ９</li>
+    <li id="category10">カテゴリ１０</li>
+  </ul>
+</nav>
+
+  <p><%- json.default.description %></p>
+  <p class="js-diff-time"></p>
+  <p class="js-raf">ｌｋさｌｋｓっぁ</p>
+  <a href="#main" class="js-scroll">スムーススクロール</a>
+  <%- include('./include/_header'); %>
+  <div class="l-mainvisual">
+    <div class="l-mainvisual-inner">
+      <p class="m-mainvisual-lead">LINE公式アカウントができました</p>
+      <img src="<%= IMG %>mv.jpg" width="960" height="480" alt="松永陶器店の商品画像">
+    </div>
+  </div><!-- ./l-mainvisual -->
+  <main id="main" class="l-main">
+    <div class="l-main-inner">
+      <div id="timer"></div>
+      <div id="json"></div>
+      <div class="l-section">
+        <div class="l-section-inner">
+          <p class="m-txt m-ac">大堀相馬焼 松永窯のLINE公式アカウントでは、最新のイベント情報やおすすめ新商品の紹介をいち早くお届け。<br>LINE限定の配信コンテンツもご用意しています。</p>
+          <%- include('./include/_linebox'); %>
+        </div><!-- ./l-section-inner -->
+      </div>
+      <div class="l-section">
+        <div class="l-section-inner">
+          <div class="l-heading-2-container">
+            <h2 class="m-heading-2"><span class="m-heading-2-line">友だち追加では<br>こんな特典があります！</span></h2>
+          </div>
+          <ul class="l-benefits">
+            <%- include('./include/_benefits'); %>
+          </ul><!-- ./l-benefits -->
+          <%- include('./include/_linebox'); %>
+        </div><!-- ./l-section-inner -->
+      </div>
+      <div class="l-section">
+        <div class="l-section-inner">
+          <ul class="l-bnr">
+            <%- include('./include/_bnr'); %>
+          </ul><!-- ./l-bnr -->
+        </div><!-- ./l-section-inner -->
+      </div>
+    </div><!-- ./l-main-inner -->
+  </main>
+  <%- include('./include/_footer'); %>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
