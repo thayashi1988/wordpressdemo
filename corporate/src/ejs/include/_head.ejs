@@ -1,13 +1,15 @@
 <%
+  // console.log('meta.description:', meta.description);
   PATH = './';
-  TITLE = '大堀相馬焼 松永陶器店│LINE公式アカウントがOPENしました';
-  DESCRIPTION = '松永陶器店 MATSUNAGAのLINE公式アカウントがOPENしましたのページです。';
+  TITLE = meta.title;
+  DESCRIPTION = meta.description;
   // KEYWORDS = ''
-  URL = 'http://soma-yaki.com/linefriend/index.html';
-  OG_SITENAME = '大堀相馬焼 松永陶器店';
-  OG_TITLE = '大堀相馬焼 松永陶器店|LINE公式アカウントがOPENしました'
-  OG_IMG = 'http://soma-yaki.com/linefriend/assets/img/ogp/ogp.png';
-  FAVICON = 'http://soma-yaki.com/shared/images/favicon.ico';
+  URL = meta.url;
+  OG_SITENAME = meta.site_name;
+  OG_TITLE = TITLE;
+  OG_IMG = meta.image;
+  FAVICON = 'http://localhost:3000/favicon.ico';
+  APPLE_ICON = 'http://localhost:3000/apple-touch-icon.png';
   // FB = 'App-ID（15文字の半角数字）'
 %>
 <head>
@@ -24,5 +26,6 @@
 <meta property="og:locale" content="ja_jp">
 <link rel="canonical" href="<%= URL %>">
 <link rel="icon" href="<%= FAVICON %>">
+<link rel="apple-touch-icon" href="<%= APPLE_ICON %> ">
 <link rel="stylesheet" href="<%= PATH %>assets/css/common.css">
 </head>

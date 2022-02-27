@@ -4,25 +4,11 @@
 %>
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./include/_head'); %>
+<%- include('./include/_head', {meta: json.index}); %>
 <body>
 
-<nav id="scroll-menu">
-  <ul class="scroll-menu-inner">
-    <li id="category1">カテゴリ１</li>
-    <li id="category2">カテゴリ２</li>
-    <li id="category3">カテゴリ３</li>
-    <li id="category4">カテゴリ４</li>
-    <li id="category5">カテゴリ５</li>
-    <li id="category6">カテゴリ６</li>
-    <li id="category7">カテゴリ７</li>
-    <li id="category8">カテゴリ８</li>
-    <li id="category9">カテゴリ９</li>
-    <li id="category10">カテゴリ１０</li>
-  </ul>
-</nav>
 
-  <p><%- json.default.description %></p>
+  <p><%- json.index.description %></p>
   <p class="js-diff-time"></p>
   <p class="js-raf">ｌｋさｌｋｓっぁ</p>
   <a href="#main" class="js-scroll">スムーススクロール</a>
