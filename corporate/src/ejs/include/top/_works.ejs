@@ -1,0 +1,39 @@
+<%
+  const SLIDEITEMS = [
+    {
+      src: '/assets/img/top/top-slider_01.jpg',
+      alt: '',
+    },
+    {
+      src: '/assets/img/top/top-slider_02.jpg',
+      alt: '',
+    },
+    {
+      src: '/assets/img/top/top-slider_03.jpg',
+      alt: '',
+    }
+]
+%>
+<div class="l-top-works">
+  <div class="l-top-works-bg">
+    <div class="l-top-works-inner">
+      <div class="l-slide">
+        <div class="m-slide-list">
+        <% SLIDEITEMS.forEach((elem, index) =>{ %>
+          <div class="m-slide-list-item">
+            <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="750" height="510">
+          </div>
+        <% }); %>
+        </div>
+      </div>
+      <div class="l-heading-2-container">
+        <h2 class="m-heading-top">WORKS<span class="m-heading-top-sub">制作実績</span></h2>
+      </div>
+      <p class="m-txt">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！</p>
+      <div class="l-btn-container">
+        <a href="/service/" class="m-btn">MORE</a>
+      </div>
+    </div>
+  </div>
+
+</div>
