@@ -14,12 +14,13 @@ $sp: 375 * 2; // デザインカンプの幅
 // $font-noto: "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
 // //   "Hiragino Sans", Meiryo, sans-serif;
 // $font: 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
-$font: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'メイリオ', sans-serif;
+$font: 'Montserrat', sans-serif, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro W3', 'Yu Gothic', '游ゴシック', 'YuGothic', '游ゴシック体', 'メイリオ', sans-serif;
 $maborosi: 'Montserrat', sans-serif;
 
 //カラー
 $main: #333;
 $sub: #391e88;
+$bg_header: #21054d;
 $bg_gray: #f7f7f7;
 $bg_black: #120e19;
 $btn: linear-gradient(90deg, rgba(116, 50, 162, 1) 0%, rgba(38, 14, 102, 1) 100%);
