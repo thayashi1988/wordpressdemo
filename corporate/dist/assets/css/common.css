@@ -489,6 +489,7 @@ template {
   --width_sm: 750px;
   --width_md: 1100px;
   --width_lg: 1300px;
+  --btn: linear-gradient(90deg, rgba(116, 50, 162, 1) 0%, rgba(38, 14, 102, 1) 100%);
 }
 
 @font-face {
@@ -1133,7 +1134,6 @@ mainvisual
   left: 0;
   width: 100%;
   padding: 21px 10px 21px 10px;
-  background: url(../img/bg_mv_txt.png) repeat-y center center;
   background-size: contain;
   color: var(--color);
   color: var(--color);
