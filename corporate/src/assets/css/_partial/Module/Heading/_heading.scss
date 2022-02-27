@@ -8,10 +8,13 @@
 // heading
 ////////////////////////
 .l-heading {
-  &-2 {
-    &-container {
-    }
-  }
+  // &-2 {
+  //   &-container {
+  //     & + * {
+  //       margin-top: 30px;
+  //     }
+  //   }
+  // }
   @include mq(max, 0, var.$sp) {
     @include sizeVw(mt, 47);
   }

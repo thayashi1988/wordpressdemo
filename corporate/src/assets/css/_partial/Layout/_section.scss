@@ -17,10 +17,13 @@
     }
   }
   &:last-child {
-    margin-top: 91px;
+    margin-top: 110px;
     @include mq(max, 0, var.$sp) {
       @include sizeVw(mt, 91);
     }
+  }
+  &[data-space='lg'] {
+    margin-top: 140px;
   }
   &-inner {
     max-width: var.$content_width;
