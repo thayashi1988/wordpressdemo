@@ -39,4 +39,11 @@
       padding: 0;
     }
   }
+  &[data-inner-space-sp='none'] {
+    #{$this}-inner {
+      @include mq(max, 0, var.$md) {
+        padding: 0;
+      }
+    }
+  }
 }
