@@ -14,13 +14,12 @@
   &:not(:first-of-type) {
     margin-top: 65px;
     @include mq(max, 0, var.$sp) {
-      // @include sizeVw(mt, 65);
     }
   }
   &:last-child {
     margin-top: 110px;
     @include mq(max, 0, var.$sp) {
-      // @include sizeVw(mt, 91);
+      margin-top: 80px;
     }
   }
   &-inner {
@@ -32,6 +31,11 @@
     margin-top: 140px;
     @include mq(max, 0, var.$md) {
       margin-top: 80px;
+    }
+  }
+  &[data-space-sp='sm'] {
+    @include mq(max, 0, var.$md) {
+      margin-top: 40px;
     }
   }
   &[data-inner-space='none'] {

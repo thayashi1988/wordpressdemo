@@ -114,10 +114,22 @@
     &-column {
       display: flex;
       align-items: center;
+      @include mq(max, 0, var.$md) {
+        flex-direction: column-reverse;
+        padding-bottom: 60px;
+      }
       &-item {
         &:first-child {
           flex: 1 1 445px;
           margin: 0 20px;
+          @include mq(max, 0, var.$md) {
+            flex: 1;
+            margin: 60px 0 0;
+          }
+        }
+        &:last-child {
+          @include mq(max, 0, var.$md) {
+          }
         }
       }
     }

@@ -11,6 +11,9 @@
   background-color: var.$bg_gray;
   &-inner {
     padding: 80px 20px;
+    @include mq(max, 0, var.$md) {
+      padding: 60px 20px;
+    }
   }
   .l-heading-2-container {
     margin-bottom: 35px;

@@ -17,8 +17,15 @@
     display: flex;
   }
   &-footer {
+    @include mq(max, 0, var.$md) {
+      display: block;
+    }
     #{$this}-list {
       justify-content: center;
+      @include mq(max, 0, var.$lg) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
     }
   }
 }
@@ -61,8 +68,21 @@
   &-footer {
     &-list {
       &-item {
+        @include mq(max, 0, var.$md) {
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+
         &:not(:first-child) {
           margin-left: 30px;
+          @include mq(max, 0, var.$md) {
+            margin-left: 0;
+          }
+        }
+        &:last-child {
+          @include mq(max, 0, var.$md) {
+            margin-right: 0;
+          }
         }
       }
     }
