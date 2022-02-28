@@ -32,4 +32,8 @@
   position: fixed;
   right: 45px;
   bottom: 45px;
+  opacity: 1;
+  visibility: visible;
+  @include transition();
+  // @include transition(visibility);
 }

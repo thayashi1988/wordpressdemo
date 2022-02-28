@@ -11,4 +11,8 @@ state
   &-transparent {
     background-color: transparent;
   }
+  &-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
