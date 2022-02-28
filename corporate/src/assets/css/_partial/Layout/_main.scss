@@ -13,4 +13,9 @@
   @include mq(max, 0, var.$sp) {
     @include sizeVw(mt, 47);
   }
+  &-top {
+    .l-heading-2-container {
+      margin-bottom: 20px;
+    }
+  }
 }
