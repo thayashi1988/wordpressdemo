@@ -30,6 +30,9 @@
   }
   &[data-space='lg'] {
     margin-top: 140px;
+    @include mq(max, 0, var.$md) {
+      margin-top: 80px;
+    }
   }
   &[data-inner-space='none'] {
     #{$this}-inner {

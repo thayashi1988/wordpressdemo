@@ -35,5 +35,14 @@
   opacity: 1;
   visibility: visible;
   @include transition();
-  // @include transition(visibility);
+  @include mq(max, 0, var.$md) {
+    right: 5px;
+    bottom: 15px;
+  }
+  img {
+    @include mq(max, 0, var.$md) {
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
