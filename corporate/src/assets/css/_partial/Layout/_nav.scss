@@ -12,19 +12,31 @@
   $this: &;
   @include mq(max, 0, var.$md) {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   &-list {
     display: flex;
+    @include mq(max, 0, var.$md) {
+      flex-direction: column;
+    }
   }
   &-footer {
     @include mq(max, 0, var.$md) {
       display: block;
+      position: static;
+      top: 0;
+      left: 0;
+      transform: none;
     }
     #{$this}-list {
       justify-content: center;
       @include mq(max, 0, var.$lg) {
         flex-wrap: wrap;
         justify-content: flex-start;
+        flex-direction: row;
       }
     }
   }
@@ -34,8 +46,15 @@
   $this: &;
   &-list {
     &-item {
+      @include mq(max, 0, var.$lg) {
+        text-align: center;
+      }
       &:not(:first-child) {
         margin-left: 25px;
+        @include mq(max, 0, var.$lg) {
+          margin-left: 0;
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -44,7 +63,7 @@
     font-weight: bold;
     position: relative;
     @include mq(max, 0, var.$lg) {
-      @include font-size(12);
+      @include font-size(15);
     }
     &::before {
       content: '';
@@ -72,11 +91,11 @@
           margin-right: 20px;
           margin-bottom: 20px;
         }
-
         &:not(:first-child) {
           margin-left: 30px;
           @include mq(max, 0, var.$md) {
             margin-left: 0;
+            margin-top: 0;
           }
         }
         &:last-child {
