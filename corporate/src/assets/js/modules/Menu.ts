@@ -39,10 +39,10 @@ export const Menu = () => {
     bodyElem.classList.add('is-fixed');
     bodyElem.style.paddingRight = scrollBarNum ? `${scrollBarNum}px` : '';
     bodyElem.appendChild(layer);
-    navElem.style.display = 'block';
     setTimeout(() => {
+      navElem.style.display = 'block';
       layer.classList.add('is-layer-show');
-    }, 10);
+    }, 50);
   };
   const handleUnFixed = (layerElement: HTMLElement): void => {
     hamburgerBtn.classList.remove('is-open');
