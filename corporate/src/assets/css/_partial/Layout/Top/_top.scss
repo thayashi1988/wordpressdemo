@@ -13,12 +13,23 @@
     justify-content: center;
     max-width: 920px;
     margin: 0 auto;
+    @include mq(max, 0, var.$md) {
+      max-width: 100%;
+      flex-direction: column;
+    }
     .l-news-list {
       margin-left: 50px;
       flex-basis: calc(100% - 170px);
+      @include mq(max, 0, var.$md) {
+        margin-left: 0;
+        flex-basis: auto;
+      }
     }
     .l-heading-2-container {
       flex-basis: 170px;
+      @include mq(max, 0, var.$md) {
+        flex-basis: auto;
+      }
     }
   }
   &-service {

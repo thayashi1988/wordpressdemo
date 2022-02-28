@@ -12,6 +12,9 @@
     &-item {
       &:not(:first-child) {
         margin-top: 15px;
+        @include mq(max, 0, var.$md) {
+          margin-top: 40px;
+        }
       }
     }
   }
@@ -21,6 +24,10 @@
   &-detail {
     display: flex;
     align-items: center;
+    @include mq(max, 0, var.$md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &-info {
       display: flex;
       align-items: center;
@@ -45,9 +52,18 @@
       background-color: #e8e8e8;
       border-radius: 50px;
       padding: 5px;
+      @include mq(max, 0, var.$md) {
+        @include font-size(11);
+        padding: 4px;
+        margin-left: 15px;
+      }
     }
     &-body {
       margin-left: 20px;
+      @include mq(max, 0, var.$md) {
+        margin-left: 0;
+        margin-top: 10px;
+      }
     }
   }
 }
