@@ -9,6 +9,7 @@
 // section
 ////////////////////////
 .l-section {
+  $this: &;
   width: 100%;
   &:not(:first-of-type) {
     margin-top: 65px;
@@ -22,12 +23,17 @@
       @include sizeVw(mt, 91);
     }
   }
-  &[data-space='lg'] {
-    margin-top: 140px;
-  }
   &-inner {
     max-width: var.$content_width;
     padding: 0 20px;
     margin: 0 auto;
+  }
+  &[data-space='lg'] {
+    margin-top: 140px;
+  }
+  &[data-inner-space='none'] {
+    #{$this}-inner {
+      padding: 0;
+    }
   }
 }
