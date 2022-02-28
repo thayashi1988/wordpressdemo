@@ -13,9 +13,9 @@
   width: 100%;
   z-index: 1;
   min-height: 65px;
-  // background-color: var.$bg_header;
-  background-color: transparent;
+  background-color: var.$bg_header;
   padding: 23px 30px;
+  @include transition(background-color);
   &-inner {
     display: flex;
     align-items: center;
