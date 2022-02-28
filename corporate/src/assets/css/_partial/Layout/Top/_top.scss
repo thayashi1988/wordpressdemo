@@ -51,4 +51,28 @@
       margin: 0 20px;
     }
   }
+  &-company {
+    max-width: var.$lg_width;
+    margin: 0 auto;
+    &-bg {
+      &-circle {
+        background-image: url('#{var.$bg_path}bg_circle.png');
+        background-repeat: no-repeat;
+        background-size: 864px auto;
+        background-position: top center;
+        aspect-ratio: 16 / 9;
+      }
+      &-face {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('#{var.$bg_path}bg_face.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        height: 100%;
+        // aspect-ratio: 16 / 9;
+      }
+    }
+  }
 }

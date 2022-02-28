@@ -10,5 +10,21 @@
 .m-txt {
   &-top {
     // margin-top: 20px;
+    &-lead {
+      @include font-size(40);
+      font-weight: bold;
+      margin-top: 40px;
+    }
+    &-company {
+      text-align: center;
+      line-height: 1.8;
+      margin-top: 40px;
+    }
+  }
+  &-marker {
+    &-yellow {
+      background: linear-gradient(transparent 70%, #f5f534 70%);
+      padding: 0 10px;
+    }
   }
 }
