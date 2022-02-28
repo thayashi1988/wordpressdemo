@@ -9,12 +9,19 @@
 // nav
 ////////////////////////
 .l-nav {
+  $this: &;
   &-list {
     display: flex;
+  }
+  &-footer {
+    #{$this}-list {
+      justify-content: center;
+    }
   }
 }
 
 .m-nav {
+  $this: &;
   &-list {
     &-item {
       &:not(:first-child) {
@@ -43,6 +50,18 @@
           width: 100%;
         }
       }
+    }
+  }
+  &-footer {
+    &-list {
+      &-item {
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
+      }
+    }
+    &-link {
+      @include font-size(14);
     }
   }
 }

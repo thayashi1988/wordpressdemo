@@ -31,11 +31,11 @@
 		<nav class="l-nav l-nav-footer">
 			<ul class="l-nav-list">
 				<% NAVITEMS.forEach((element,index) => { %>
-				<li class="m-nav-list-item"><a href="<%- element.href %>" class="m-nav-link"><%- element.name %></a></li>
+				<li class="m-nav-list-item m-nav-footer-list-item"><a href="<%- element.href %>" class="m-nav-link m-nav-footer-link"><%- element.name %></a></li>
 				<% }); %>
 			</ul>
 		</nav>
-    <p class="m-copyright"><small>&copy; PON DESIGN</small></p>
+    <p class="m-footer-copyright"><small>&copy; PON DESIGN</small></p>
   </div><!-- ./l-footer-inner -->
 </footer><!-- ./l-footer -->
-<p class="m-pagetop"><a href="#" aria-label="pagetopへ戻る"><img src="<%- IMG %>icon/icon_pagetop.png" alt="pagetopへ戻る" width="50" height="50"></a></p>
+<p class="m-pagetop"><a href="#" class="js-pagetop" aria-label="pagetopへ戻る"><img src="<%- IMG %>icon/icon_pagetop.png" alt="pagetopへ戻る" width="50" height="50"></a></p>

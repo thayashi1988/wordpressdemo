@@ -1,0 +1,35 @@
+@use 'sass:math';
+@use '../Mixin/_mixin' as *;
+@use '../Config/_variables' as var;
+
+/*------------------------
+  footer
+------------------------*/
+/////////////////////////
+// footer
+////////////////////////
+.l-footer {
+  background-color: var.$bg_black;
+  padding: 60px 20px;
+}
+
+.m-footer {
+  &-copyright {
+    color: #a798b7;
+    text-align: center;
+    @include font-size(10);
+    margin-top: 22px;
+  }
+}
+
+/*------------------------
+  pagetop
+------------------------*/
+/////////////////////////
+// pagetop
+////////////////////////
+.m-pagetop {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+}
