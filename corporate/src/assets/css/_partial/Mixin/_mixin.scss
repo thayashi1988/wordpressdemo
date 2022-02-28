@@ -110,6 +110,6 @@
 // // @include transition(1s,.5s);
 // // @include transition(1s,.5s,linear);
 // //transition
-@mixin transition($speed: 0.4s, $delay: 0s, $easeing: ease) {
-  transition: all $speed $delay $easeing;
+@mixin transition($props: all, $speed: 0.4s, $delay: 0s, $easeing: ease) {
+  transition: $props $speed $delay $easeing;
 }
