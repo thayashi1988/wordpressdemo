@@ -14,6 +14,7 @@
   --width_md: 1100px;
   --width_lg: 1300px;
   --btn: linear-gradient(90deg, rgba(116, 50, 162, 1) 0%, rgba(38, 14, 102, 1) 100%);
+  --btn-rev: linear-gradient(90deg, rgba(38, 14, 102, 1) 0%, rgba(116, 50, 162, 1) 100%);
 }
 @font-face {
   font-family: 'Montserrat';
@@ -41,6 +42,7 @@ html {
 body {
   font-family: var.$font;
   @include font-size(15);
+  color: var(--color_main);
   color: var.$main;
   line-height: 1.6;
   letter-spacing: 0.05em;
@@ -82,8 +84,6 @@ p {
   line-height: 1.6;
   letter-spacing: 0.05em;
   word-break: break-all;
-  // background: var.$btn;
-  // background: var(--btn);
   @include mq(max, 0, var.$md) {
     @include font-size(14);
     line-height: 1.7;

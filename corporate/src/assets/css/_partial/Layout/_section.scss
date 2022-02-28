@@ -23,6 +23,7 @@
     }
   }
   &-inner {
+    max-width: var(--width_content);
     max-width: var.$content_width;
     padding: 0 20px;
     margin: 0 auto;

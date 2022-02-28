@@ -23,7 +23,6 @@
   font-weight: bold;
   width: 100%;
   max-width: 200px;
-  // background: var.$btn;
   padding: 21px 0;
   z-index: 0;
   position: relative;
@@ -36,6 +35,7 @@
     z-index: -1;
     left: 0;
     transition: all 0.4s ease;
+    background: var(--btn);
     background: var.$btn;
   }
   &::after {
@@ -46,6 +46,7 @@
     position: absolute;
     z-index: -2;
     left: 0;
+    background: var(--btn-rev);
     background: var.$btn-rev;
   }
   &:hover {

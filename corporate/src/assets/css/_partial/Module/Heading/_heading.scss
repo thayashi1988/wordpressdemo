@@ -22,6 +22,7 @@
 
 .m-heading {
   &-top {
+    color: var(--color_sub);
     color: var.$sub;
     @include font-size(36);
     font-weight: bold;

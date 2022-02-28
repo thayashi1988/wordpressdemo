@@ -33,6 +33,7 @@
     }
   }
   &-service {
+    max-width: var(--width_md);
     max-width: var.$md_width;
     margin: 0 auto;
   }
@@ -67,6 +68,7 @@
     }
   }
   &-company {
+    max-width: var(--width_lg);
     max-width: var.$lg_width;
     margin: 0 auto;
     &-bg {
@@ -114,7 +116,9 @@
   }
   &-recruit {
     &-inner {
+      max-width: var(--width_md);
       max-width: var.$md_width;
+      background-color: var(--bg_gray);
       background-color: var.$bg_gray;
       margin: 0 auto;
     }

@@ -27,8 +27,6 @@
   &-inner {
     display: flex;
     align-items: center;
-    // max-width: var.$content_width;
-    // margin: 0 auto;
     @include mq(max, 0, var.$md) {
       flex: 1;
     }

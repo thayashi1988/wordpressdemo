@@ -9,6 +9,7 @@
 // footer
 ////////////////////////
 .l-footer {
+  background-color: var(--bg_black);
   background-color: var.$bg_black;
   padding: 60px 20px;
   @include mq(max, 0, var.$md) {
