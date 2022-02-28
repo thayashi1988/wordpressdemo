@@ -24,13 +24,29 @@
 			name: 'CONTACT',
 			href: '/contact/',
 		}
-]
+	];
+
+	const MENUSVG =[
+		{
+			source: '\<svg xmlns="http://www.w3.org/2000/svg" width="31" height="2" viewBox="0 0 31 2">\<line x2="31" transform="translate(1 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>\</svg>'
+		},
+		{
+			source: '\<svg xmlns="http://www.w3.org/2000/svg" width="31" height="2" viewBox="0 0 31 2">\<line x2="31" transform="translate(1 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>\</svg>'
+		},
+		{
+			source: '\<svg xmlns="http://www.w3.org/2000/svg" width="31" height="2" viewBox="0 0 31 2">\<line x2="31" transform="translate(1 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>\</svg>'
+		}
+	]
 %>
 <header class="l-header is-transparent">
 	<div class="l-header-inner">
 		<p class="m-header-logo"><a href="/" class="m-header-logo-link"><img src="<%= IMG %>logo.svg" width="160" height="17" alt="PON DESIGN"></a></p>
 		<div class="l-menu">
-			<button class="m-menu js-menu"><span class="m-menu-line"></span></button>
+			<button class="m-menu js-menu">
+				<% MENUSVG.forEach((elem,index) => { %>
+					<%- elem.source %>
+				<% }); %>
+			</button>
 		</div>
 		<nav class="l-nav">
 			<ul class="l-nav-list">

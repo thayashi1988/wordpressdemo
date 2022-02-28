@@ -18,11 +18,20 @@
   background-color: var.$bg_header;
   padding: 23px 30px;
   @include transition(background-color);
+  @include mq(max, 0, var.$md) {
+    display: flex;
+    align-items: center;
+    min-height: 62px;
+    padding: 10px 15px;
+  }
   &-inner {
     display: flex;
     align-items: center;
     max-width: var.$content_width;
     margin: 0 auto;
+    @include mq(max, 0, var.$md) {
+      flex: 1;
+    }
   }
 }
 
@@ -31,6 +40,10 @@
     margin-right: auto;
     img {
       vertical-align: middle;
+      @include mq(max, 0, var.$md) {
+        width: 124px;
+        height: 22px;
+      }
     }
   }
 }

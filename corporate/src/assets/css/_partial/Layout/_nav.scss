@@ -10,6 +10,9 @@
 ////////////////////////
 .l-nav {
   $this: &;
+  @include mq(max, 0, var.$md) {
+    display: none;
+  }
   &-list {
     display: flex;
   }
@@ -33,6 +36,9 @@
     color: #fff;
     font-weight: bold;
     position: relative;
+    @include mq(max, 0, var.$lg) {
+      @include font-size(12);
+    }
     &::before {
       content: '';
       position: absolute;

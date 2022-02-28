@@ -9,7 +9,22 @@
 // menu
 ////////////////////////
 .l-menu {
-  @include mq(min, 0, var.$md) {
+  display: block;
+  @include mq(min, var.$md, 0) {
     display: none;
+  }
+}
+
+.m-menu {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  svg {
+    &:not(:first-child) {
+      margin-top: 7px;
+    }
   }
 }
