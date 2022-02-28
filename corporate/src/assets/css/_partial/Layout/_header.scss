@@ -9,8 +9,12 @@
 // header
 ////////////////////////
 .l-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   min-height: 65px;
-  background-color: var.$bg_header;
+  // background-color: var.$bg_header;
+  background-color: transparent;
   padding: 23px 30px;
   &-inner {
     display: flex;
