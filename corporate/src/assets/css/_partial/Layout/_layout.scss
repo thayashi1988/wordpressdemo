@@ -94,9 +94,9 @@ btn
   &-inner {
     padding: 35px 50px;
   }
-  &.l-btn-line {
-    // border: 4px solid var.$line;
-  }
+  // &.l-btn-line {
+  // border: 4px solid var.$line;
+  // }
   &-col {
     display: flex;
     align-items: center;
@@ -358,9 +358,9 @@ bnr
 /*///////////////////////
 footer
 ///////////////////////*/
-.l-footer {
-  margin-top: 134px;
-  @include mq(max, 0, var.$sp) {
-    margin-top: calc(120px / 2);
-  }
-}
+// .l-footer {
+//   margin-top: 134px;
+//   @include mq(max, 0, var.$sp) {
+//     margin-top: calc(120px / 2);
+//   }
+// }
