@@ -184,6 +184,7 @@ const min_Sass = (cb) => {
   gulp
     .src(src.sass)
     .pipe(plumber({ errorHandler: notify.onError('min_Sass Error: <%= error.message %>>') }))
+    .pipe(sassGlob())
     // Dart Sassの場合
     .pipe(cssSass({ fiber: fibers, outputStyle: 'expanded' }))
     // Node Sassの場合
