@@ -50,4 +50,9 @@
       }
     }
   }
+  &[data-inner-width='full'] {
+    #{$this}-inner {
+      max-width: 100%;
+    }
+  }
 }

@@ -73,19 +73,25 @@
       &-circle {
         background-image: url('#{var.$bg_path}bg_circle.png');
         background-repeat: no-repeat;
-        background-size: 864px auto;
+        // background-size: 864px auto;
+        background-size: contain;
         background-position: top center;
-        aspect-ratio: 16 / 9;
+        // aspect-ratio: 16 / 9;
+        padding-bottom: 73px;
         @include mq(max, 0, var.$md) {
           // width: 100vw;
           background-image: url('#{var.$bg_path}bg_circle_sp.png');
-          background-position: -20px;
+          background-position: top;
+          // background-position: top left -20px;
           // background-size: 111% auto;
-          background-size: cover;
+          // background-size: cover;
           padding-bottom: 80px;
-          margin-left: calc(-50vw + 50%);
-          margin-right: calc(-50vw + 50%);
-          aspect-ratio: auto;
+          // margin-left: calc(-50vw + 50%);
+          // margin-right: calc(-50vw + 50%);
+          // aspect-ratio: auto;
+        }
+        @include mq(max, 0, var.$md) {
+          background-position: top left -20px;
         }
       }
       &-face {
@@ -94,7 +100,8 @@
         justify-content: center;
         background-image: url('#{var.$bg_path}bg_face.png');
         background-repeat: no-repeat;
-        background-size: contain;
+        // background-size: contain;
+        background-size: 1300px auto;
         background-position: center center;
         height: 100%;
         @include mq(max, 0, var.$md) {
@@ -129,6 +136,12 @@
         }
         &:last-child {
           @include mq(max, 0, var.$md) {
+            width: 100%;
+          }
+          img {
+            @include mq(max, 0, var.$md) {
+              width: 100%;
+            }
           }
         }
       }
