@@ -1,0 +1,18 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  contact
+------------------------*/
+/////////////////////////
+// contact
+////////////////////////
+.l-contact {
+  background-color: var.$bg_gray;
+  &-inner {
+    padding: 80px 20px;
+  }
+  .l-heading-2-container {
+    margin-bottom: 35px;
+  }
+}

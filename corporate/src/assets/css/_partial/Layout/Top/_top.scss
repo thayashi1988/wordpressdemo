@@ -24,16 +24,10 @@
   &-service {
     max-width: var.$md_width;
     margin: 0 auto;
-    .l-heading-2-container {
-      margin-bottom: 20px;
-    }
   }
   &-works {
     max-width: 1260px;
     margin: 0 auto;
-    .l-heading-2-container {
-      margin-bottom: 20px;
-    }
     .l-slide {
       max-width: 750px;
     }
@@ -72,6 +66,23 @@
         background-position: center center;
         height: 100%;
         // aspect-ratio: 16 / 9;
+      }
+    }
+  }
+  &-recruit {
+    &-inner {
+      max-width: var.$md_width;
+      background-color: var.$bg_gray;
+      margin: 0 auto;
+    }
+    &-column {
+      display: flex;
+      align-items: center;
+      &-item {
+        &:first-child {
+          flex: 1 1 445px;
+          margin: 0 20px;
+        }
       }
     }
   }
