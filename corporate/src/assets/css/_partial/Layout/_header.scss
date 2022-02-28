@@ -27,8 +27,8 @@
   &-inner {
     display: flex;
     align-items: center;
-    max-width: var.$content_width;
-    margin: 0 auto;
+    // max-width: var.$content_width;
+    // margin: 0 auto;
     @include mq(max, 0, var.$md) {
       flex: 1;
     }
@@ -42,7 +42,7 @@
       vertical-align: middle;
       @include mq(max, 0, var.$md) {
         width: 124px;
-        height: 22px;
+        // height: 22px;
       }
     }
   }

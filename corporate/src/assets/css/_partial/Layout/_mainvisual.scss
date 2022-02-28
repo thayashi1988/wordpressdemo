@@ -12,21 +12,48 @@
   $this: &;
   position: relative;
   // height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background-image: url('#{var.$bg_path}bg_main.jpg');
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   // padding-top: 53.3333%;
+  @include mq(max, 0, var.$md) {
+    background-image: url('#{var.$bg_path}bg_main_sp.jpg');
+  }
   &-top {
-    aspect-ratio: 16 / 9;
+    // aspect-ratio: 16 / 9;
+    @include mq(max, 0, var.$md) {
+      // aspect-ratio: auto;
+      // @include sizeVw(pt, 227);
+      // @include sizeVw(pb, 240);
+    }
     #{$this}-inner {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
+      // height: 100%;
+      padding: 262px 30px;
+      @include mq(max, 0, var.$md) {
+        max-width: calc((340 / var.$sp) * 100vw);
+        padding: 0;
+        margin: 0 auto;
+      }
     }
   }
   &-inner {
     padding: 0 30px;
+    @include mq(max, 0, var.$md) {
+      padding: 0 20px;
+    }
+  }
+  &-body {
+    @include mq(max, 0, var.$md) {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -36,6 +63,10 @@
     @include font-size(72);
     line-height: 1.25;
     font-weight: bold;
+    word-break: keep-all;
+    @include mq(max, 0, var.$md) {
+      @include font-size(48);
+    }
     &-sub {
       color: #fff;
       @include font-size(24);
@@ -43,13 +74,15 @@
       font-weight: bold;
       text-align: center;
       margin-top: 20px;
-      @include mq(max, 0, var.$sp) {
+      @include mq(max, 0, var.$md) {
+        @include font-size(16);
         text-align: left;
       }
     }
   }
   &-btn {
     color: #fff;
+    @include font-size(15);
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -61,6 +94,9 @@
     border-radius: 50px;
     padding: 20px;
     margin: 50px auto 0;
+    @include mq(max, 0, var.$md) {
+      margin: 50px 0 0;
+    }
     &:hover {
       text-decoration: none;
       @include mq(min, var.$sp, 0) {
@@ -77,6 +113,9 @@
     font-weight: bold;
     height: 80px;
     writing-mode: vertical-rl;
+    @include mq(max, 0, var.$md) {
+      @include font-size(12);
+    }
     &::before {
       content: '';
       position: absolute;
