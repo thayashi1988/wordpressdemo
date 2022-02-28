@@ -76,6 +76,17 @@
         background-size: 864px auto;
         background-position: top center;
         aspect-ratio: 16 / 9;
+        @include mq(max, 0, var.$md) {
+          // width: 100vw;
+          background-image: url('#{var.$bg_path}bg_circle_sp.png');
+          background-position: -20px;
+          // background-size: 111% auto;
+          background-size: cover;
+          padding-bottom: 80px;
+          margin-left: calc(-50vw + 50%);
+          margin-right: calc(-50vw + 50%);
+          aspect-ratio: auto;
+        }
       }
       &-face {
         display: flex;
@@ -86,6 +97,10 @@
         background-size: contain;
         background-position: center center;
         height: 100%;
+        @include mq(max, 0, var.$md) {
+          background-image: none;
+          padding: 0 20px;
+        }
         // aspect-ratio: 16 / 9;
       }
     }
