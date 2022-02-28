@@ -14,5 +14,33 @@ state
   &-hide {
     opacity: 0;
     visibility: hidden;
+    &-logo {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  &-layer {
+    &-show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &-open {
+    & > * {
+      &:first-child {
+        transform: translate(2px, -7px) rotate(45deg);
+        transform-origin: top left;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        height: 0;
+        margin-top: 14px !important;
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+        transform-origin: top left;
+        margin-top: 0 !important;
+      }
+    }
   }
 }

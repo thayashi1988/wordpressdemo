@@ -1,13 +1,14 @@
 // npm plugins
 // import $ from 'jquery'; // jquery
 import smoothscroll from 'smoothscroll-polyfill'; // window.scrollToのbehavior: 'smooth'を効かすpolyfill
-// import 'intersection-observer'; // intersection-observerをimportし対応
+import 'intersection-observer'; // intersection-observerをimportし対応
 // import axios from 'axios'; // IEでも使えるhttpクライアント
 // import 'whatwg-fetch'; // fecthのIEpolyfill
 
 // modules
 import { Pagetop } from './modules/Pagetop';
 import { HeaderScroll } from './modules/HeaderScroll';
+import { Menu } from './modules/Menu';
 // import { UA } from './modules/ua';
 // import { foreachtest } from './modules/foreachtest';
 // import { smoothScroll } from './modules/smoothscroll';
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   smoothscroll.polyfill();
   Pagetop();
   HeaderScroll();
+  Menu();
 
   // test($);
   // foreachtest();
