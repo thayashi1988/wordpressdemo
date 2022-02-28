@@ -43,4 +43,10 @@ state
       }
     }
   }
+  &-fixed {
+    overflow: hidden;
+    .l-header {
+      width: 100vw;
+    }
+  }
 }
