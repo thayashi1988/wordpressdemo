@@ -1,0 +1,14 @@
+@use 'sass:math';
+@use '../../../Mixin/_mixin' as *;
+@use '../../../Config/_variables' as var;
+/*------------------------
+  service
+------------------------*/
+/////////////////////////
+// service
+////////////////////////
+.l-service {
+  max-width: var(--width_md);
+  max-width: var.$md_width;
+  margin: 0 auto;
+}

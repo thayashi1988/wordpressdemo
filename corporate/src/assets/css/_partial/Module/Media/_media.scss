@@ -14,6 +14,35 @@
     flex-direction: column;
     flex: 1;
   }
+  &-list {
+    &-item {
+      display: flex;
+      @include mq(max, 0, var.$md) {
+        flex-direction: column;
+      }
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+    }
+  }
+  &-img {
+    flex: 0 0 445px;
+    max-width: 445px;
+    @include mq(max, 0, var.$md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &-detail {
+    flex: 0 0 calc(100% - (445px + 50px));
+    max-width: calc(100% - (445px + 50px));
+    margin-left: 50px;
+    @include mq(max, 0, var.$md) {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
 }
 
 .m-media {
@@ -21,23 +50,46 @@
     width: 100%;
   }
   &-description {
+    $this: &;
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
     @include mq(max, 0, var.$md) {
-      margin-top: 14px;
+      margin-top: 20px;
+    }
+    &#{$this}-col {
+      margin-top: 24px;
+      @include mq(max, 0, var.$md) {
+        margin-top: 14px;
+      }
+      #{$this} {
+        &-title {
+          text-align: center;
+          @include font-size(18);
+          margin-bottom: 17px;
+          @include mq(max, 0, var.$md) {
+            margin-bottom: 10px;
+          }
+        }
+        &-txt {
+          // margin-top: auto;
+          margin: auto 0 0 0;
+        }
+      }
     }
     &-title {
-      text-align: center;
-      @include font-size(18);
-      margin-bottom: 17px;
+      @include font-size(24);
       @include mq(max, 0, var.$md) {
-        margin-bottom: 10px;
+        @include font-size(18);
+        text-align: center;
       }
     }
     &-txt {
-      margin-top: auto;
+      margin-top: 20px;
+      @include mq(max, 0, var.$md) {
+        @include font-size(14);
+        margin-top: 15px;
+      }
     }
   }
 }
