@@ -33,7 +33,7 @@
     }
     @for $value from 1 through 12 {
       &[data-col-sp='#{$value}'] {
-        @include mq(max, 0, var.$sp) {
+        @include mq(max, 0, var.$md) {
           width: math.div(100%, 12) * $value;
         }
       }
