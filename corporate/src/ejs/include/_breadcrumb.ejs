@@ -1,4 +1,5 @@
 <%
+  const BREADCRUMB = breadcrumb ? breadcrumb : '';
   const BREADS = [
     {
       label: 'Home',
@@ -17,7 +18,7 @@
       <meta itemprop="position" content="1" />
     </li>
     <li class="l-breadcrumb-list-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <span class="m-breadcrumb-txt" itemprop="name"><%= breadcrumb %></span>
+      <span class="m-breadcrumb-txt" itemprop="name"><%= BREADCRUMB %></span>
       <meta itemprop="position" content="2" />
     </li>
   </ol>
