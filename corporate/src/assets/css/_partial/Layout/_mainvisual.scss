@@ -55,6 +55,12 @@
       flex-grow: 1;
     }
   }
+  &#{$this}-under {
+    max-height: 240px;
+    @include mq(max, 0, var.$md) {
+      max-height: 190px;
+    }
+  }
 }
 
 .m-mainvisual {

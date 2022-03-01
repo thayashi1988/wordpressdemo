@@ -8,7 +8,7 @@
 // heading
 ////////////////////////
 .l-heading {
-  // &-2 {
+  // &-1 {
   //   &-container {
   //     & + * {
   //       margin-top: 30px;
@@ -16,7 +16,7 @@
   //   }
   // }
   @include mq(max, 0, var.$sp) {
-    @include sizeVw(mt, 47);
+    // @include sizeVw(mt, 47);
   }
 }
 
@@ -48,6 +48,17 @@
           align-self: center;
         }
       }
+    }
+  }
+  &-1 {
+    color: #fff;
+    @include font-size(36);
+    font-weight: bold;
+    &-sub {
+      color: #fff;
+      @include font-size(14);
+      font-weight: bold;
+      text-align: center;
     }
   }
 }
