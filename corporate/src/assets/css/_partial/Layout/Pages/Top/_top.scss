@@ -1,6 +1,6 @@
 @use 'sass:math';
-@use '../../Mixin/_mixin' as *;
-@use '../../Config/_variables' as var;
+@use '../../../Mixin/_mixin' as *;
+@use '../../../Config/_variables' as var;
 /*------------------------
   top
 ------------------------*/
@@ -40,9 +40,6 @@
   &-works {
     max-width: 1260px;
     margin: 0 auto;
-    .l-slide {
-      // max-width: 750px;
-    }
     &-bg {
       background: linear-gradient(90deg, #fff 0%, #fff 30%, #f0f0f0 30%, #f0f0f0 100%);
       padding-top: 60px;

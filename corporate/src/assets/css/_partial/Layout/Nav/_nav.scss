@@ -1,6 +1,6 @@
 @use 'sass:math';
-@use '../Mixin/_mixin' as *;
-@use '../Config/_variables' as var;
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
 
 /*------------------------
   nav
@@ -64,6 +64,11 @@
     color: #fff;
     font-weight: bold;
     position: relative;
+    @include mq(min, var.$md, 0) {
+      &:hover {
+        text-decoration: none;
+      }
+    }
     @include mq(min, var.$lg, 0) {
       @include font-size(15);
     }
@@ -84,8 +89,10 @@
       transition: width 0.3s ease;
     }
     &:hover {
-      @include mq(min, var.$sp, 0) {
+      @include mq(max, 0, var.$md) {
         text-decoration: none;
+      }
+      @include mq(min, var.$sp, 0) {
         &::before {
           width: 100%;
         }
