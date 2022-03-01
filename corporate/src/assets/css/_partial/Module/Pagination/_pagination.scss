@@ -1,0 +1,89 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  pagination
+------------------------*/
+/////////////////////////
+// pagination
+////////////////////////
+.l-pagination {
+  margin-top: 40px;
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(max, 0, var.$md) {
+      overflow-x: auto;
+    }
+    &-item {
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.m-pagination {
+  &-link {
+    color: #fff;
+    @include font-size(20);
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--btn_col);
+    background: var.$btn_col;
+    position: relative;
+    z-index: 0;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      transition: all 0.4s ease;
+      background: var(--btn_col);
+      background: var.$btn_col;
+    }
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      position: absolute;
+      z-index: -2;
+      left: 0;
+      background: var(--btn_col-rev);
+      background: var.$btn_col-rev;
+    }
+    &:hover {
+      text-decoration: none;
+      @include mq(min, var.$md, 0) {
+        opacity: 0.95;
+      }
+      &::before {
+        @include mq(min, var.$md, 0) {
+          opacity: 0;
+        }
+      }
+    }
+    &-current {
+      color: var(--color_sub);
+      background: #f1ebf8;
+      &::before,
+      &::after {
+        content: none;
+      }
+      &:hover {
+        &::before {
+        }
+      }
+    }
+  }
+}

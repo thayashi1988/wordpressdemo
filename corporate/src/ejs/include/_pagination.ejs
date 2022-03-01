@@ -1,0 +1,52 @@
+<%
+  const ITEMS = [
+    {
+      href: '/',
+      current: true,
+    },
+    {
+      href: '/',
+      current: false,
+    },
+    {
+      href: '/',
+      current: false,
+    },
+    // {
+    //   href: '/',
+    //   current: false,
+    // },
+    // {
+    //   href: '/',
+    //   current: false,
+    // },
+    // {
+    //   href: '/',
+    //   current: false,
+    // },
+    // {
+    //   href: '/',
+    //   current: false,
+    // },
+    // {
+    //   href: '/',
+    //   current: false,
+    // },
+    // {
+    //   href: '/',
+    //   current: false,
+    // },
+]
+%>
+
+<div class="l-pagination">
+  <ol class="l-pagination-list">
+    <% ITEMS.forEach((elem, index) => { %>
+      <% if(elem.current) { %>
+    <li class="l-pagination-list-item"><span class="m-pagination-link m-pagination-link-current"><%- index + 1 %> </span></li>
+      <% } else { %>
+    <li class="l-pagination-list-item"><a href="<%- elem.href %>" class="m-pagination-link"><%- index + 1 %> </a></li>
+      <% } %>
+    <% }); %>
+  </ol>
+</div>
