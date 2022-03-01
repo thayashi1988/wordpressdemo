@@ -9,11 +9,11 @@
 // menu
 ////////////////////////
 .l-menu {
-  display: block;
+  display: none;
   @include mq(min, var.$md, 0) {
-    display: none;
   }
   @include mq(max, 0, var.$md) {
+    display: block;
   }
   &-layer {
     position: fixed;

@@ -35,6 +35,8 @@
       justify-content: center;
       @include mq(max, 0, var.$lg) {
         flex-wrap: wrap;
+      }
+      @include mq(max, 0, var.$md) {
         justify-content: flex-start;
         flex-direction: row;
       }
@@ -46,12 +48,12 @@
   $this: &;
   &-list {
     &-item {
-      @include mq(max, 0, var.$lg) {
+      @include mq(max, 0, var.$md) {
         text-align: center;
       }
       &:not(:first-child) {
         margin-left: 25px;
-        @include mq(max, 0, var.$lg) {
+        @include mq(max, 0, var.$md) {
           margin-left: 0;
           margin-top: 20px;
         }
@@ -62,7 +64,13 @@
     color: #fff;
     font-weight: bold;
     position: relative;
+    @include mq(min, var.$lg, 0) {
+      @include font-size(15);
+    }
     @include mq(max, 0, var.$lg) {
+      @include font-size(12);
+    }
+    @include mq(max, 0, var.$md) {
       @include font-size(15);
     }
     &::before {
