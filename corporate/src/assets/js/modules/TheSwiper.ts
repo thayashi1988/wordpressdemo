@@ -13,8 +13,6 @@ export const TheSwiper = () => {
     slidesPerView: 1,
     resizeReInit: true,
     grabCursor: true,
-    // autoHeight: true,
-    // calculateHeight: true,
     pagination: {
       el: '.js-swiper-pagination',
       clickable: true,
@@ -24,7 +22,6 @@ export const TheSwiper = () => {
       prevEl: '.swiper-button-prev',
     },
   };
-  console.log('options:', options);
   /* @ts-ignore */
   const swiper = new Swiper('.swiper', options);
 };
