@@ -1,4 +1,7 @@
 <%
+  breadcrumb = '';
+  title = '';
+  subTitle = '';
   IMG = '/assets/img/';
   RESOURCE = '/assets/';
 %>
@@ -9,7 +12,7 @@
   <%- include('../include/_header'); %>
   <div class="l-mainvisual l-mainvisual-under">
     <div class="l-mainvisual-inner">
-      <%- include('../include/_mv'); %>
+      <%- include('../include/_mv', { title: 'NEWS', subTitle: 'お知らせ' } ); %>
     </div>
   </div><!-- ./l-mainvisual -->
   <%- include('../include/_breadcrumb', { breadcrumb: 'NEWS' } ); %>
