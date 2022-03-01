@@ -7,5 +7,61 @@
 /////////////////////////
 // slide
 ////////////////////////
-// .l-slide {
-// }
+.l-slide {
+  &-container {
+    &.swiper-container {
+      position: relative;
+      width: calc(100% - 375px);
+      max-width: 750px;
+      @include mq(max, 0, var.$md) {
+        width: 100%;
+      }
+      .swiper {
+        z-index: 0;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--color_sub);
+      }
+      .swiper-pagination {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        bottom: -22px;
+        left: auto;
+        right: 0;
+        .swiper-pagination-bullet-active {
+          background-color: var(--color_sub);
+        }
+        .swiper-pagination-bullet {
+          display: inline-block;
+          position: relative;
+          border-radius: 3px;
+          width: 100%;
+          height: 4px;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            transform: translateY(-50%);
+          }
+          // width: 40px;
+          // height: 40px;
+        }
+      }
+    }
+  }
+}
+
+.m-slide {
+  &-list {
+    &-item {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

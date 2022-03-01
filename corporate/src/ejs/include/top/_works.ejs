@@ -4,27 +4,32 @@
       src: '/assets/img/top/top-slider_01.jpg',
       alt: '',
     },
-    // {
-    //   src: '/assets/img/top/top-slider_02.jpg',
-    //   alt: '',
-    // },
-    // {
-    //   src: '/assets/img/top/top-slider_03.jpg',
-    //   alt: '',
-    // }
+    {
+      src: '/assets/img/top/top-slider_02.jpg',
+      alt: '',
+    },
+    {
+      src: '/assets/img/top/top-slider_03.jpg',
+      alt: '',
+    }
 ]
 %>
 <div class="l-top-works">
   <div class="l-top-works-bg">
     <div class="l-top-works-inner">
-      <div class="l-slide">
-        <div class="m-slide-list">
-        <% SLIDEITEMS.forEach((elem, index) =>{ %>
-          <div class="m-slide-list-item">
-            <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="750" height="510">
+      <div class="l-slide-container swiper-container">
+        <div class="l-slide swiper">
+          <div class="m-slide-list swiper-wrapper">
+          <% SLIDEITEMS.forEach((elem, index) =>{ %>
+            <div class="m-slide-list-item swiper-slide">
+              <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="750" height="510">
+            </div>
+          <% }); %>
           </div>
-        <% }); %>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
+        <div class="swiper-pagination js-swiper-pagination"></div>
       </div>
       <div class="l-top-works-detail">
         <div class="l-heading-2-container">
