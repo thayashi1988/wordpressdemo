@@ -9,15 +9,19 @@
 // main
 ////////////////////////
 .l-main {
-  margin-top: 70px;
+  $this: &;
+  margin-top: 60px;
   @include mq(max, 0, var.$md) {
     @include sizeVw(mt, 40);
   }
-  &-top {
-    .l-heading-2-container {
-      margin-bottom: 20px;
-      @include mq(max, 0, var.$md) {
-        margin-bottom: 30px;
+  &#{$this} {
+    &-top {
+      margin-top: 70px;
+      .l-heading-2-container {
+        margin-bottom: 20px;
+        @include mq(max, 0, var.$md) {
+          margin-bottom: 30px;
+        }
       }
     }
   }
