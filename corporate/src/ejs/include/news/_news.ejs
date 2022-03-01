@@ -1,0 +1,102 @@
+<%
+  const NEWSLISTS = [
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'Webデザインニュースサイト「ウェブマガジン」に取材いただきました',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.01.25',
+      label: '制作実績',
+      txt: 'Smoothiesta様のWebサイトを制作いたしました',
+      href: '/news/b.html'
+    },
+    {
+      date: '2030.01.20',
+      label: '採用',
+      txt: 'Webデザイナーを１名募集中です！',
+      href: '/news/c.html'
+    },
+    {
+      date: '2030.02.01',
+      label: '採用',
+      txt: '（２行のテキストの場合）テキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入るテキストが入る',
+      href: '/news/d.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+    {
+      date: '2030.02.01',
+      label: 'お知らせ',
+      txt: 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります',
+      href: '/news/a.html'
+    },
+  ]
+%>
+<div class="l-news">
+  <ul class="l-news-list">
+    <%
+      NEWSLISTS.forEach((elem, index) =>{
+        const date = elem.date.replace(/\./g, '-');
+    %>
+    <li class="l-news-list-item">
+      <dl class="m-news-detail">
+        <dt class="m-news-detail-info">
+          <time class="m-news-detail-date" datetime="<%- date %>"><%- elem.date %></time>
+          <span class="m-news-detail-label"><%- elem.label %></span>
+        </dt>
+        <dd class="m-news-detail-body">
+          <a href="<%- elem.href %>" class="m-link"><%- elem.txt %></a>
+        </dd>
+      </dl>
+    </li>
+    <% }); %>
+  </ul>
+</div>

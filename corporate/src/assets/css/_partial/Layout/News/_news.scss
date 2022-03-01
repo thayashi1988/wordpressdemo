@@ -8,6 +8,10 @@
 // news
 ////////////////////////
 .l-news {
+  display: flex;
+  justify-content: center;
+  max-width: var(--width_md);
+  margin: 0 auto;
   &-list {
     &-item {
       &:not(:first-child) {
