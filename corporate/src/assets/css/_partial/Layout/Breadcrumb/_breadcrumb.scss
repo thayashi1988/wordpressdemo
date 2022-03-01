@@ -1,0 +1,43 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  breadcrumb
+------------------------*/
+/////////////////////////
+// breadcrumb
+////////////////////////
+.l-breadcrumb {
+  background-color: var(--bg_gray);
+  padding: 15px 20px;
+  &-list {
+    display: flex;
+    align-items: center;
+    max-width: var(--width_md);
+    margin: 0 auto;
+    &-item {
+      position: relative;
+      &:not(:first-child) {
+        &::before {
+          content: '>';
+          // display: block;
+          // width: 10px;
+          // height: 10px;
+          margin: 0 6px 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.m-breadcrumb {
+  &-link {
+    color: var(--color_sub);
+  }
+  &-txt {
+    @include font-size(12);
+    @include mq(max, 0, var.$md) {
+      @include font-size(11);
+    }
+  }
+}
