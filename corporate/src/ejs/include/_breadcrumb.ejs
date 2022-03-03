@@ -1,15 +1,7 @@
 <%
-  const BREADCRUMB = breadcrumb ? breadcrumb : '';
-  const BREADS = [
-    {
-      label: 'Home',
-      href: '/'
-    },
-    {
-      label: 'Home',
-      href: '/'
-    }
-]
+  // console.log('breadcrumb:', breadcrumb.length);
+  const BREADCRUMBTYPE = typeof breadcrumb
+  const BREADCRUMB = breadcrumb;
 %>
 <div class="l-breadcrumb">
   <ol class="l-breadcrumb-list" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -17,20 +9,25 @@
       <a class="m-breadcrumb-link" itemprop="item" href="/"><span itemprop="name" class="m-breadcrumb-txt">HOME</span></a>
       <meta itemprop="position" content="1" />
     </li>
+    <% if(BREADCRUMBTYPE !== 'string') { %>
+    <% BREADCRUMB.forEach((elem,index) => { %>
+    <% if(BREADCRUMB.length - 1 !== index) { const HREF = elem.toLowerCase(); console.log('HREF:', HREF); %>
+    <li class="l-breadcrumb-list-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a class="m-breadcrumb-link" itemprop="item" href="/<%- HREF %>/"><span itemprop="name" class="m-breadcrumb-txt"><%- elem %></span></a>
+      <meta itemprop="position" content="<%- index + 2 %>" />
+    </li>
+    <% } else { %>
+    <li class="l-breadcrumb-list-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span class="m-breadcrumb-txt" itemprop="name"><%- elem %></span>
+      <meta itemprop="position" content="<%- index + 2 %>" />
+    </li>
+    <% } %>
+    <% }) %>
+    <% } else { %>
     <li class="l-breadcrumb-list-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       <span class="m-breadcrumb-txt" itemprop="name"><%= BREADCRUMB %></span>
       <meta itemprop="position" content="2" />
     </li>
+    <% } %>
   </ol>
 </div>
-
-<!-- <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <a itemprop="item" href="/"><span itemprop="name">HOME</span></a>
-    <meta itemprop="position" content="1" />
-  </li>
-  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <span itemprop="name">NEWS</span>
-    <meta itemprop="position" content="2" />
-  </li>
-</ol> -->
