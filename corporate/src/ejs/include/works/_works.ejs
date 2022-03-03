@@ -1,0 +1,48 @@
+<%
+  const WORKSITEMS = [
+    {
+      src: '/assets/img/works/thumb_works_01.png',
+      alt: '',
+      href: '/',
+      title: 'Smoothiesta 様'
+    },
+    {
+      src: '/assets/img/works/thumb_works_02.png',
+      alt: '',
+      href: '/',
+      title: 'Web Conference 様'
+    },
+    {
+      src: '/assets/img/works/thumb_works_03.png',
+      alt: '',
+      href: '/',
+      title: 'LAMINA 様'
+    },
+    {
+      src: '/assets/img/works/thumb_works_04.png',
+      alt: '',
+      href: '/',
+      title: 'CITYLab 様'
+    },
+    {
+      src: '/assets/img/works/thumb_works_05.png',
+      alt: '',
+      href: '/',
+      title: 'TABILOG 様'
+    },
+  ]
+%>
+<div class="l-column">
+  <% WORKSITEMS.forEach((elem,index) => { %>
+  <li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12" data-gutter="md">
+    <div class="l-media l-media-col">
+      <a href="<%- elem.href %>" class="m-media-link-card">
+        <span>
+          <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="350" height="238" class="m-media-img">
+        </span>
+        <p class="m-media-link-txt"><%- elem.title %></p>
+      </a>
+    </div>
+  </li>
+  <% }); %>
+</div>
