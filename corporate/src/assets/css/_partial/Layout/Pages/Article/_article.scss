@@ -1,0 +1,89 @@
+@use 'sass:math';
+@use '../../../Mixin/_mixin' as *;
+@use '../../../Config/_variables' as var;
+/*------------------------
+  article
+------------------------*/
+/////////////////////////
+// article
+////////////////////////
+.l-article {
+  &-content {
+    max-width: var(--width_sm);
+    max-width: var.$sm_width;
+    margin: 0 auto;
+    p {
+      margin-top: 30px;
+    }
+    h1 {
+      @include font-size(32);
+      font-weight: bold;
+      margin-bottom: 10px;
+      @include mq(max, 0, var.$md) {
+        @include font-size(22);
+        margin-bottom: 20px;
+      }
+    }
+    h2 {
+      @include font-size(24);
+      font-weight: bold;
+      padding-left: 15px;
+      // border-left: 6px solid var.$sub;
+      // border-radius: 3px;
+      position: relative;
+      margin-top: 70px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 6px;
+        height: 100%;
+        background-color: var.$sub;
+        border-radius: 5px;
+      }
+      & + * {
+        margin-top: 30px;
+        @include mq(max, 0, var.$md) {
+          margin-top: 20px;
+        }
+      }
+    }
+    h3 {
+      @include font-size(18);
+      font-weight: bold;
+      margin-top: 40px;
+      & + * {
+        margin-top: 20px;
+        @include mq(max, 0, var.$md) {
+          margin-top: 20px;
+        }
+      }
+    }
+    .m-news-detail {
+      margin-bottom: 30px;
+    }
+  }
+  &-paging {
+    display: flex;
+    // align-items: center;
+    border-top: 1px solid #b8aed5;
+    border-bottom: 1px solid #b8aed5;
+    padding: 30px 0;
+    margin-top: 40px;
+    &-item {
+      width: 50%;
+      padding: 0 30px;
+      &-next {
+        border-right: 1px solid #b8aed5;
+      }
+      &-prev {
+      }
+      a {
+        color: var.$sub;
+        color: var(--color_sub);
+      }
+    }
+  }
+}

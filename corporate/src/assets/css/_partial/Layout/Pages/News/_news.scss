@@ -22,6 +22,11 @@
       }
     }
   }
+  &-content {
+    max-width: var(--width_sm);
+    max-width: var.$sm_width;
+    margin: 0 auto;
+  }
 }
 
 .m-news {
