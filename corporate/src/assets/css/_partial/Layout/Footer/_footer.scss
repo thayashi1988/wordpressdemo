@@ -52,4 +52,9 @@
       height: 40px;
     }
   }
+  &:hover {
+    @include mq(min, var.$md, 0) {
+      opacity: 0.7;
+    }
+  }
 }
