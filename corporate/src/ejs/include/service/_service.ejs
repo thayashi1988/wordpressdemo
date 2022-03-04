@@ -20,20 +20,22 @@
     },
   ]
 %>
-<div class="l-media">
-  <ul class="l-media-list">
-    <% SERVICEITEMS.forEach((elem, index) =>{ %>
-    <li class="l-media-list-item">
-      <div class="l-media-img">
-        <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="445" height="280" class="m-media-img">
-      </div>
-      <div class="l-media-detail">
-        <dl class="m-media-description">
-          <dt class="m-media-description-title"><%- elem.title %></dt>
-          <dd class="m-media-description-txt"><%- elem.txt %></dd>
-        </dl>
-      </div>
-    </li>
-    <% }); %>
-  </ul>
+<div class="l-service">
+  <div class="l-media">
+    <ul class="l-media-list">
+      <% SERVICEITEMS.forEach((elem, index) =>{ %>
+      <li class="l-media-list-item">
+        <div class="l-media-img">
+          <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="445" height="280" class="m-media-img">
+        </div>
+        <div class="l-media-detail">
+          <dl class="m-media-description">
+            <dt class="m-media-description-title"><%- elem.title %></dt>
+            <dd class="m-media-description-txt"><%- elem.txt %></dd>
+          </dl>
+        </div>
+      </li>
+      <% }); %>
+    </ul>
+  </div>
 </div>

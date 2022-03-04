@@ -32,17 +32,19 @@
     },
   ]
 %>
-<div class="l-column">
-  <% WORKSITEMS.forEach((elem,index) => { %>
-  <li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12" data-gutter="md">
-    <div class="l-media l-media-col">
-      <a href="<%- elem.href %>" class="m-media-link-card">
-        <span>
-          <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="350" height="238" class="m-media-img">
-        </span>
-        <p class="m-media-link-txt"><%- elem.title %></p>
-      </a>
-    </div>
-  </li>
-  <% }); %>
+<div class="l-works">
+  <div class="l-column">
+    <% WORKSITEMS.forEach((elem,index) => { %>
+    <li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12" data-gutter="md">
+      <div class="l-media l-media-col">
+        <a href="<%- elem.href %>" class="m-media-link-card">
+          <span>
+            <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="350" height="238" class="m-media-img">
+          </span>
+          <p class="m-media-link-txt"><%- elem.title %></p>
+        </a>
+      </div>
+    </li>
+    <% }); %>
+  </div>
 </div>
