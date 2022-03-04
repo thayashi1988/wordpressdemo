@@ -1,0 +1,21 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  map
+------------------------*/
+/////////////////////////
+// map
+////////////////////////
+.l-map {
+  margin-top: 60px;
+  @include mq(max, 0, var.$md) {
+    margin-top: 30px;
+  }
+}
+
+.m-map {
+  &-link {
+    margin-top: 10px;
+  }
+}

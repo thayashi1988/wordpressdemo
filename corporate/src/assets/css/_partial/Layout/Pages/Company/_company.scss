@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use '../../../Mixin/_mixin' as *;
+@use '../../../Config/_variables' as var;
+/*------------------------
+  company
+------------------------*/
+/////////////////////////
+// company
+////////////////////////
+.l-company {
+  &-content {
+    max-width: var(--width_lg);
+    max-width: var.$lg_width;
+    margin: 0 auto;
+  }
+  .l-top-company-bg-face {
+    align-items: stretch;
+    background-position: top center;
+    padding-bottom: 100px;
+  }
+  @include mq(max, 0, var.$md) {
+    .l-top-company-bg-circle {
+      padding: 0;
+    }
+    .l-top-company-bg-face {
+      padding-bottom: 0;
+    }
+  }
+}

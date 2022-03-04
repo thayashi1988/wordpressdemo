@@ -1,0 +1,35 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  description
+------------------------*/
+/////////////////////////
+// description
+////////////////////////
+.l-description {
+  $this: &;
+  &#{$this}-col {
+    display: flex;
+    padding: 30px 30px;
+    @include mq(max, 0, var.$md) {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  }
+}
+
+.m-description {
+  &-title {
+    width: 100%;
+    max-width: 175px;
+    @include mq(max, 0, var.$md) {
+      @include font-size(16);
+    }
+  }
+  &-txt {
+    @include mq(max, 0, var.$md) {
+      @include font-size(16);
+    }
+  }
+}
