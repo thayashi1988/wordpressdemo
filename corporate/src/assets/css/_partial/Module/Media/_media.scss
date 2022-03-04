@@ -83,12 +83,19 @@
         @include font-size(18);
         text-align: center;
       }
+      & + * {
+        margin-top: 20px;
+      }
     }
     &-txt {
-      margin-top: 20px;
       @include mq(max, 0, var.$md) {
         @include font-size(14);
-        margin-top: 15px;
+      }
+      &:not(:first-child) {
+        margin-top: 20px;
+        @include mq(max, 0, var.$md) {
+          margin-top: 15px;
+        }
       }
     }
   }
