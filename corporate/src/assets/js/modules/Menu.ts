@@ -67,4 +67,16 @@ export const Menu = () => {
     bodyElem.style.top = '';
     window.scrollTo(0, backToScroll);
   };
+
+  const mql = window.matchMedia('(max-width: 768px)');
+  const listener = (event: any) => {
+    if (!event.matches) {
+      if (bodyElem.classList.contains('is-fixed')) {
+        hamburgerBtn.click();
+        navElem.style.display = '';
+      }
+    }
+  };
+  mql.addEventListener('change', listener);
+  listener(mql);
 };
