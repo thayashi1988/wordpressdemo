@@ -43,6 +43,27 @@ utility
 }
 
 ////////////////////////
+// block-center
+////////////////////////
+.m-block-lg {
+  max-width: var(--width_lg);
+  max-width: var.$lg_width;
+  margin: 0 auto;
+}
+
+.m-block-md {
+  max-width: var(--width_md);
+  max-width: var.$md_width;
+  margin: 0 auto;
+}
+
+.m-block-sm {
+  max-width: var(--width_sm);
+  max-width: var.$sm_width;
+  margin: 0 auto;
+}
+
+////////////////////////
 // width
 ////////////////////////
 @for $i from 0 through 20 {
