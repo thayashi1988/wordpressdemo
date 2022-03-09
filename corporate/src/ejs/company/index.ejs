@@ -18,16 +18,18 @@
   <%- include('../include/_breadcrumb', { breadcrumb: 'COMPANY' } ); %>
   <main id="main" class="l-main l-main-under">
     <div class="l-main-inner">
-      <section class="l-section" data-inner-space="none">
-        <div class="l-section-inner">
-          <%- include('../include/company/_company'); %>
-        </div><!-- ./l-section-inner -->
-      </section>
-      <section class="l-section">
-        <div class="l-section-inner">
-          <%- include('../include/company/_company_detail'); %>
-        </div><!-- ./l-section-inner -->
-      </section>
+      <div class="l-company l-top-company">
+        <section class="l-section" data-inner-space="none">
+          <div class="l-section-inner">
+            <%- include('../include/company/_company'); %>
+          </div><!-- ./l-section-inner -->
+        </section>
+        <section class="l-section">
+          <div class="l-section-inner">
+            <%- include('../include/company/_company_detail'); %>
+          </div><!-- ./l-section-inner -->
+        </section>
+      </div>
       <section class="l-section" data-inner-space="none" data-inner-width="full">
         <div class="l-section-inner">
           <%- include('../include/_contact'); %>
