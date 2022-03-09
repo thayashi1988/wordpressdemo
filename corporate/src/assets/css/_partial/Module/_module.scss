@@ -70,57 +70,57 @@ mainvisual
 /*///////////////////////
 heading
 ///////////////////////*/
-.m-heading {
-  &-1 {
-    text-align: center;
-    font-size: func.vw(30px);
-  }
-  &-2 {
-    font-family: var.$maborosi;
-    // font-weight: bold;
-    @include font-size(24);
-    text-align: center;
-    @include mq(max, 0, var.$sp) {
-      @include font-size(22);
-    }
-    &-line {
-      display: inline-block;
-      line-height: 1.6;
-      position: relative;
-      padding-bottom: 5px;
-      @include mq(max, 0, var.$sp) {
-        padding-bottom: calc(30px / 2);
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        left: -14%;
-        bottom: 0;
-        width: 124%;
-        height: 1px;
-        background-color: var.$sub;
-        @include mq(max, 0, var.$sp) {
-          left: 0;
-          width: 100%;
-        }
-      }
-    }
-  }
-  &-3 {
-    font-family: 'MaboroshinoNijimiMincho';
-    @include font-size(24);
-    text-align: center;
-    @include mq(max, 0, var.$sp) {
-      @include font-size(20);
-    }
-    &-sub {
-      display: block;
-      color: var.$sub;
-      @include font-size(16);
-      margin-bottom: 10px;
-    }
-  }
-}
+// .m-heading {
+//   &-1 {
+//     text-align: center;
+//     font-size: func.vw(30px);
+//   }
+//   &-2 {
+//     font-family: var.$maborosi;
+//     // font-weight: bold;
+//     @include font-size(24);
+//     text-align: center;
+//     @include mq(max, 0, var.$sp) {
+//       @include font-size(22);
+//     }
+//     &-line {
+//       display: inline-block;
+//       line-height: 1.6;
+//       position: relative;
+//       padding-bottom: 5px;
+//       @include mq(max, 0, var.$sp) {
+//         padding-bottom: calc(30px / 2);
+//       }
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         left: -14%;
+//         bottom: 0;
+//         width: 124%;
+//         height: 1px;
+//         background-color: var.$sub;
+//         @include mq(max, 0, var.$sp) {
+//           left: 0;
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+//   &-3 {
+//     font-family: 'MaboroshinoNijimiMincho';
+//     @include font-size(24);
+//     text-align: center;
+//     @include mq(max, 0, var.$sp) {
+//       @include font-size(20);
+//     }
+//     &-sub {
+//       display: block;
+//       color: var.$sub;
+//       @include font-size(16);
+//       margin-bottom: 10px;
+//     }
+//   }
+// }
 
 /*///////////////////////
 txt
