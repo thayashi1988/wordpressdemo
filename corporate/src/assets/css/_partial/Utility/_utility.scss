@@ -40,13 +40,13 @@ utility
 .m-hide {
   &-pc {
     display: none;
-    @include mq(max, 0, var.$sp) {
+    @include mq(max, 0, var.$md) {
       display: block;
     }
   }
   &-sp {
     display: block;
-    @include mq(max, 0, var.$sp) {
+    @include mq(max, 0, var.$md) {
       display: none;
     }
   }
