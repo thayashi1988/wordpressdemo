@@ -13,6 +13,7 @@
   &-list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     max-width: var(--width_md);
     margin: 0 auto;
     &-item {
