@@ -25,4 +25,13 @@
       }
     }
   }
+  &#{$this} {
+    &-recruit {
+      margin-top: 0;
+      .l-section-recruit {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
