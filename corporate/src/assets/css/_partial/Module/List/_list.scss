@@ -13,4 +13,18 @@
       border-bottom: 1px solid #dddddd;
     }
   }
+  &-item {
+    display: table;
+  }
+  &-container {
+    margin-top: 20px;
+  }
+}
+
+.m-list {
+  &-icon {
+    display: table-cell;
+  }
+  &-body {
+  }
 }
