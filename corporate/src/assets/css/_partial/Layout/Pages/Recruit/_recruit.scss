@@ -1,0 +1,35 @@
+@use 'sass:math';
+@use '../../../Mixin/_mixin' as *;
+@use '../../../Config/_variables' as var;
+/*------------------------
+  recruit
+------------------------*/
+/////////////////////////
+// recruit
+////////////////////////
+.l-recruit {
+  // max-width: var(--width_md);
+  // max-width: var.$md_width;
+  // margin: 0 auto;
+  $this: &;
+  padding-top: 115px;
+  padding-bottom: 110px;
+  @include mq(max, 0, var.$md) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  &#{$this}-bg {
+    background-image: url('#{var.$img_path}/bg/bg_recruit.png');
+    // background-repeat: no-repeat;
+    background-size: 400px 400px;
+  }
+  &-img {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    @include mq(max, 0, var.$md) {
+      margin-bottom: 40px;
+    }
+  }
+  .l-heading-2-container {
+  }
+}
