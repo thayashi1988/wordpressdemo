@@ -1,0 +1,38 @@
+<%
+  breadcrumb = '';
+  title = '';
+  subTitle = '';
+  IMG = '/assets/img/';
+  RESOURCE = '/assets/';
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../include/_head', {meta: json.index}); %>
+<body>
+  <%- include('../include/_header'); %>
+  <div class="l-mainvisual l-mainvisual-under">
+    <div class="l-mainvisual-inner">
+      <%- include('../include/_mv', { title: 'RECRUIT', subTitle: '採用情報' } ); %>
+    </div>
+  </div><!-- ./l-mainvisual -->
+  <%- include('../include/_breadcrumb', { breadcrumb: '採用情報' } ); %>
+  <main id="main" class="l-main l-main-under l-main-recruit">
+    <div class="l-main-inner">
+      <!-- <section class="l-section" data-inner-space="none">
+        <div class="l-section-inner"> -->
+          <%- include('../include/recruit/_recruit'); %>
+        <!-- </div> -->
+        <!-- ./l-section-inner -->
+      <!-- </section> -->
+      <section class="l-section l-section-recruit" data-inner-space="none" data-inner-width="full">
+        <div class="l-section-inner">
+          <%- include('../include/_contact'); %>
+        </div><!-- ./l-section-inner -->
+      </section>
+    </div><!-- ./l-main-inner -->
+  </main>
+  <%- include('../include/_footer'); %>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="<%- RESOURCE %>/js/index.js"></script>
+</body>
+</html>
