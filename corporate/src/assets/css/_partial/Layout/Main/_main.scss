@@ -17,12 +17,12 @@
   &#{$this} {
     &-top {
       margin-top: 70px;
-      .l-heading-2-container {
-        margin-bottom: 20px;
-        @include mq(max, 0, var.$md) {
-          margin-bottom: 30px;
-        }
-      }
+      // .l-heading-top-container {
+      // margin-bottom: 30px;
+      // @include mq(max, 0, var.$md) {
+      //   margin-bottom: 30px;
+      // }
+      // }
     }
   }
   &#{$this} {

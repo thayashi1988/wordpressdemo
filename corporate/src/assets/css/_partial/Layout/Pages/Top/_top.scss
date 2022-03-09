@@ -25,7 +25,7 @@
         flex-basis: auto;
       }
     }
-    .l-heading-2-container {
+    .l-heading-top-container {
       flex-basis: 170px;
       @include mq(max, 0, var.$md) {
         flex-basis: auto;
