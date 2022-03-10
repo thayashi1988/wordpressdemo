@@ -1,0 +1,32 @@
+contact<%
+  breadcrumb = '';
+  title = '';
+  subTitle = '';
+  IMG = '/assets/img/';
+  RESOURCE = '/assets/';
+%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../include/_head', {meta: json.index}); %>
+<body>
+  <%- include('../include/_header'); %>
+  <div class="l-mainvisual l-mainvisual-under">
+    <div class="l-mainvisual-inner">
+      <%- include('../include/_mv', { title: 'CONTACT', subTitle: 'お問い合わせ' } ); %>
+    </div>
+  </div><!-- ./l-mainvisual -->
+  <%- include('../include/_breadcrumb', { breadcrumb: 'CONTACT' } ); %>
+  <main id="main" class="l-main l-main-under">
+    <div class="l-main-inner">
+      <section class="l-section" data-space="none">
+        <div class="l-section-inner">
+          <%- include('../include/contact/_contact'); %>
+        </div><!-- ./l-section-inner -->
+      </section>
+    </div><!-- ./l-main-inner -->
+  </main>
+  <%- include('../include/_footer'); %>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="<%- RESOURCE %>/js/index.js"></script>
+</body>
+</html>

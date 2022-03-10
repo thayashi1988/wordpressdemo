@@ -26,6 +26,9 @@
     padding: 0 20px;
     margin: 0 auto;
   }
+  &[data-space='none'] {
+    margin-top: 0;
+  }
   &[data-space='lg'] {
     margin-top: 140px;
     @include mq(max, 0, var.$md) {

@@ -1,0 +1,107 @@
+@use 'sass:math';
+@use '../../Mixin/_mixin' as *;
+@use '../../Config/_variables' as var;
+/*------------------------
+  form
+------------------------*/
+/////////////////////////
+// form
+////////////////////////
+.l-form {
+  max-width: var(--width_md);
+  max-width: var.$md_width;
+  background-color: var(--bg_gray);
+  background-color: var.$bg_gray;
+  margin: 40px auto 70px;
+  &-inner {
+    padding: 90px;
+  }
+}
+
+.m-form {
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  textarea,
+  select {
+    @include font-size(16);
+    max-width: 300px;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  input[type='tel'] {
+    max-width: 200px;
+  }
+  textarea {
+    max-width: 600px;
+    min-height: 255px;
+    padding: 10px 10px;
+  }
+  input[type='radio'] {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      box-shadow: 0px 0px 3px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  &-list {
+    margin-bottom: 50px;
+    &-item {
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+    }
+  }
+  &-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    &-txt {
+      @include font-size(16);
+      font-weight: bold;
+      &-small {
+        @include font-size(12);
+      }
+    }
+    &-require {
+      display: inline-block;
+      color: var(--color_sub);
+      color: var.$sub;
+      @include font-size(12);
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    &-flex {
+      display: flex;
+      align-items: center;
+      &-txt {
+        margin-left: 5px;
+      }
+    }
+  }
+  &-parts {
+    display: flex;
+    $this: &;
+    & > * {
+      &:not(:first-child) {
+        margin-left: 35px;
+      }
+    }
+    &-col {
+      flex-direction: column;
+      & > * {
+        &:not(:first-child) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

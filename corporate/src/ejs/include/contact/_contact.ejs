@@ -1,0 +1,72 @@
+<p class="m-ac">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+<div class="l-form">
+  <div class="l-form-inner">
+    <form action="/" method="post" class="m-form">
+      <ul class="m-form-list">
+        <li class="m-form-list-item">
+          <span class="m-form-label"><span class="m-form-label-txt">お問い合わせ種別</span><span class="m-form-label-require"><sup>*</sup>必須</span></span>
+          <div class="m-form-parts">
+            <label for="work" class="m-form-label-flex">
+              <input type="radio" id="work" name="detail" class="m-form-radio" required><span class="m-form-label-flex-txt">お仕事のご依頼・ご相談</span>
+            </label>
+            <label for="estimate" class="m-form-label-flex">
+              <input type="radio" id="estimate" name="detail" class="m-form-radio" required><span class="m-form-label-flex-txt">お見積りのご依頼</span>
+            </label>
+            <label for="recruit" class="m-form-label-flex">
+              <input type="radio" id="recruit" name="detail" class="m-form-radio" required><span class="m-form-label-flex-txt">採用について</span>
+            </label>
+            <label for="others" class="m-form-label-flex">
+              <input type="radio" id="others" name="detail" class="m-form-radio" required><span class="m-form-label-flex-txt">その他</span>
+            </label>
+          </div>
+        </li>
+        <li class="m-form-list-item">
+          <div class="m-form-parts m-form-parts-col">
+            <label for="name" class="m-form-label"><span class="m-form-label-txt">お名前</span><span class="m-form-label-require"><sup>*</sup>必須</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+        </li>
+        <li class="m-form-list-item">
+          <div class="m-form-parts m-form-parts-col">
+            <label for="company" class="m-form-label"><span class="m-form-label-txt">会社名</span></label>
+            <input type="text" id="company" name="company">
+          </div>
+        </li>
+        <li class="m-form-list-item">
+          <div class="m-form-parts m-form-parts-col">
+            <label for="email" class="m-form-label"><span class="m-form-label-txt">メールアドレス</span><span class="m-form-label-require"><sup>*</sup>必須</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </li>
+        <li class="m-form-list-item">
+          <div class="m-form-parts m-form-parts-col">
+            <label for="phone" class="m-form-label"><span class="m-form-label-txt">お電話番号</span><span class="m-form-label-txt-small">（半角数字ハイフンなし）</span></label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </li>
+        <li class="m-form-list-item">
+          <div class="m-form-parts m-form-parts-col">
+            <label for="contents" class="m-form-label"><span class="m-form-label-txt">お問い合わせ内容</span><span class="m-form-label-require"><sup>*</sup>必須</span></label>
+            <textarea name="contents" id="contents" cols="30" rows="30" required></textarea>
+          </div>
+        </li>
+        <li class="m-form-list-item">
+          <div class="m-form-parts m-form-parts-col">
+            <label for="knew" class="m-form-label"><span class="m-form-label-txt">PON DESIGNをどちらでお知りになりましたか？</span><span class="m-form-label-require"><sup>*</sup>必須</span></label>
+            <select name="knew" id="knew" required>
+              <option value="none">選択してください</option>
+              <option value="search">Google/Yahoo検索</option>
+              <option value="sns">SNS</option>
+              <option value="blog">ブログ</option>
+              <option value="friend">友人や知人</option>
+              <option value="others">その他</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+      <div class="l-btn-container">
+        <button type="submit" class="m-btn">送信する</button>
+      </div>
+    </form>
+  </div>
+</div>
