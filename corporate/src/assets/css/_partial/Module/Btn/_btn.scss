@@ -75,6 +75,9 @@
     //   background: var.$btn-rev;
     // }
   }
+  &:focus-visible {
+    outline: 1px solid var(--color_sub);
+  }
   &-sub {
     &-txt {
       @include font-size(12);
