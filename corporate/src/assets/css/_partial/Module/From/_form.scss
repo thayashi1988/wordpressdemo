@@ -15,6 +15,9 @@
   margin: 40px auto 70px;
   &-inner {
     padding: 90px;
+    @include mq(max, 0, var.$md) {
+      padding: 30px;
+    }
   }
 }
 
@@ -31,6 +34,9 @@
     border-radius: 5px;
     background-color: #fff;
     padding: 0 10px;
+    &:focus-visible {
+      outline: 1px solid var(--color_sub);
+    }
   }
   input[type='tel'] {
     max-width: 200px;
@@ -63,10 +69,17 @@
   }
   &-label {
     display: inline-block;
+    max-width: max-content;
     margin-bottom: 10px;
+    @include mq(max, 0, var.$md) {
+      margin-bottom: 15px;
+    }
     &-txt {
       @include font-size(16);
       font-weight: bold;
+      @include mq(max, 0, var.$md) {
+        @include font-size(15);
+      }
       &-small {
         @include font-size(12);
       }
@@ -90,9 +103,16 @@
   &-parts {
     display: flex;
     $this: &;
+    @include mq(max, 0, var.$md) {
+      flex-direction: column;
+    }
     & > * {
       &:not(:first-child) {
         margin-left: 35px;
+        @include mq(max, 0, var.$md) {
+          margin-left: 0;
+          margin-top: 15px;
+        }
       }
     }
     &-col {
@@ -100,6 +120,9 @@
       & > * {
         &:not(:first-child) {
           margin-left: 0;
+          @include mq(max, 0, var.$md) {
+            margin-top: 0;
+          }
         }
       }
     }
