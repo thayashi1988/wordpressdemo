@@ -40,6 +40,9 @@
   }
   input[type='tel'] {
     max-width: 200px;
+    @include mq(max, 0, var.$md) {
+      max-width: 100%;
+    }
   }
   textarea {
     max-width: 600px;
