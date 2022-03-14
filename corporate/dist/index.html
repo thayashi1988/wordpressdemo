@@ -18,13 +18,14 @@
 	<link rel="canonical" href="http://localhost:3000/index.html">
 	<link rel="icon" href="http://localhost:3000/favicon.ico">
 	<link rel="apple-touch-icon" href="http://localhost:3000/apple-touch-icon.png ">
-	<link rel="stylesheet" href="./assets/css/common.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="/assets/css/common.css">
 </head>
 
 <body>
 	<header class="l-header is-transparent">
 		<div class="l-header-inner">
-			<p class="m-header-logo"><a href="/" class="m-header-logo-link"><img src="./assets/img/logo.svg" width="160" height="17" alt="PON DESIGN"></a></p>
+			<p class="m-header-logo"><a href="/" class="m-header-logo-link"><img src="/assets/img/logo.svg" width="160" height="17" alt="PON DESIGN"></a></p>
 			<div class="l-menu">
 				<button class="m-menu js-menu">
 					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="2" viewBox="0 0 34 2">
@@ -65,7 +66,7 @@
 			<section class="l-section">
 				<div class="l-section-inner">
 					<div class="l-top-news">
-						<div class="l-heading-2-container">
+						<div class="l-heading-top-container">
 							<h2 class="m-heading-top m-heading-top-left">NEWS<span class="m-heading-top-sub m-heading-top-sub-left">お知らせ</span></h2>
 						</div>
 						<ul class="l-news-list">
@@ -109,14 +110,14 @@
 			<section class="l-section" data-space="lg">
 				<div class="l-section-inner">
 					<div class="l-top-service">
-						<div class="l-heading-2-container">
+						<div class="l-heading-top-container">
 							<h2 class="m-heading-top">SERVICE<span class="m-heading-top-sub">事業内容</span></h2>
 						</div>
 						<ul class="l-column">
 							<li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12">
 								<div class="l-media l-media-col">
-									<img src="/assets/img/top/top_service_01.jpg" alt="" width="350" height="220" class="m-media-img">
-									<dl class="m-media-description">
+									<img src="/assets/img/top/top_service_01.jpg" alt="" width="350" height="220" class="m-media-img" loading="lazy">
+									<dl class="m-media-description m-media-description-col">
 										<dt class="m-media-description-title">Webサイト制作</dt>
 										<dd class="m-media-description-txt">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</dd>
 									</dl>
@@ -124,8 +125,8 @@
 							</li>
 							<li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12">
 								<div class="l-media l-media-col">
-									<img src="/assets/img/top/top_service_02.jpg" alt="" width="350" height="220" class="m-media-img">
-									<dl class="m-media-description">
+									<img src="/assets/img/top/top_service_02.jpg" alt="" width="350" height="220" class="m-media-img" loading="lazy">
+									<dl class="m-media-description m-media-description-col">
 										<dt class="m-media-description-title">Webサイト運用</dt>
 										<dd class="m-media-description-txt">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</dd>
 									</dl>
@@ -133,8 +134,8 @@
 							</li>
 							<li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12">
 								<div class="l-media l-media-col">
-									<img src="/assets/img/top/top_service_03.jpg" alt="" width="350" height="220" class="m-media-img">
-									<dl class="m-media-description">
+									<img src="/assets/img/top/top_service_03.jpg" alt="" width="350" height="220" class="m-media-img" loading="lazy">
+									<dl class="m-media-description m-media-description-col">
 										<dt class="m-media-description-title">アプリ開発</dt>
 										<dd class="m-media-description-txt">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</dd>
 									</dl>
@@ -142,8 +143,8 @@
 							</li>
 							<li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12">
 								<div class="l-media l-media-col">
-									<img src="/assets/img/top/top_service_02.jpg" alt="" width="350" height="220" class="m-media-img">
-									<dl class="m-media-description">
+									<img src="/assets/img/top/top_service_02.jpg" alt="" width="350" height="220" class="m-media-img" loading="lazy">
+									<dl class="m-media-description m-media-description-col">
 										<dt class="m-media-description-title">Webサイト運用</dt>
 										<dd class="m-media-description-txt">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</dd>
 									</dl>
@@ -151,7 +152,7 @@
 							</li>
 						</ul>
 						<div class="l-btn-container">
-							<a href="/service/" class="m-btn">MORE</a>
+							<a href="/service/" class="m-btn">事業内容へ</a>
 						</div>
 					</div>
 				</div><!-- ./l-section-inner -->
@@ -161,20 +162,31 @@
 					<div class="l-top-works">
 						<div class="l-top-works-bg">
 							<div class="l-top-works-inner">
-								<div class="l-slide">
-									<div class="m-slide-list">
-										<div class="m-slide-list-item">
-											<img src="/assets/img/top/top-slider_01.jpg" alt="" width="750" height="510">
+								<div class="l-slide-container swiper-container">
+									<div class="l-slide swiper">
+										<div class="m-slide-list swiper-wrapper">
+											<div class="m-slide-list-item swiper-slide">
+												<img src="/assets/img/top/top-slider_01.jpg" alt="" width="750" height="510">
+											</div>
+											<div class="m-slide-list-item swiper-slide">
+												<img src="/assets/img/top/top-slider_02.jpg" alt="" width="750" height="510">
+											</div>
+											<div class="m-slide-list-item swiper-slide">
+												<img src="/assets/img/top/top-slider_03.jpg" alt="" width="750" height="510">
+											</div>
 										</div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
 									</div>
+									<div class="swiper-pagination js-swiper-pagination"></div>
 								</div>
 								<div class="l-top-works-detail">
-									<div class="l-heading-2-container">
+									<div class="l-heading-top-container">
 										<h2 class="m-heading-top">WORKS<span class="m-heading-top-sub">制作実績</span></h2>
 									</div>
 									<p class="m-ac">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！</p>
 									<div class="l-btn-container">
-										<a href="/works/" class="m-btn">MORE</a>
+										<a href="/works/" class="m-btn">制作実績へ</a>
 									</div>
 								</div>
 							</div>
@@ -188,13 +200,13 @@
 						<div class="l-top-company-bg-circle">
 							<div class="l-top-company-bg-face">
 								<div class="l-top-company-inner">
-									<div class="l-heading-2-container">
+									<div class="l-heading-top-container">
 										<h2 class="m-heading-top">COMPANY<span class="m-heading-top-sub">私たちについて</span></h2>
 									</div>
 									<p class="m-txt-top-lead"><span class="m-txt-marker-yellow">サイトのゴール = <br class="m-hide-pc">夢を叶えること</span></p>
 									<p class="m-txt-top-company">お客様の夢を叶えること。<br>それがWebサイトのゴールであり、<br class="m-hide-pc">私たちが目指すことです。<br>だからこそちゃんと成果を出すサイトを<br class="m-hide-pc">全力でお作りします。<br>お客様の笑顔を見たい。<br>夢を実現する手助けをさせてください。</p>
 									<div class="l-btn-container">
-										<a href="/company/" class="m-btn">MORE</a>
+										<a href="/company/" class="m-btn">私たちについてへ</a>
 									</div>
 								</div>
 							</div>
@@ -208,16 +220,16 @@
 						<div class="l-top-recruit-inner">
 							<div class="l-top-recruit-column">
 								<div class="l-top-recruit-column-item">
-									<div class="l-heading-2-container">
+									<div class="l-heading-top-container">
 										<h2 class="m-heading-top">RECRUIT<span class="m-heading-top-sub">採用情報</span></h2>
 									</div>
 									<p class="m-ac">私たちと一緒に働きませんか？</p>
 									<div class="l-btn-container">
-										<a href="/recruit/" class="m-btn">MORE</a>
+										<a href="/recruit/" class="m-btn">採用情報へ</a>
 									</div>
 								</div>
 								<div class="l-top-recruit-column-item">
-									<img src="./assets/img/top/img_recruit_01.jpg" alt="" width="665" height="340">
+									<img src="/assets/img/top/img_recruit_01.jpg" alt="" width="665" height="340" loading="lazy">
 								</div>
 							</div>
 						</div>
@@ -228,12 +240,12 @@
 				<div class="l-section-inner">
 					<div class="l-contact">
 						<div class="l-contact-inner">
-							<div class="l-heading-2-container">
+							<div class="l-heading-top-container l-heading-top-container-contact">
 								<h2 class="m-heading-top">CONTACT<span class="m-heading-top-sub">お問い合わせ</span></h2>
 							</div>
 							<p class="m-ac">Webサイトの制作のご依頼やお見積りなど、<br class="m-hide-pc">お気軽にご相談ください。</p>
 							<div class="l-btn-container">
-								<a href="/contact/" class="m-btn">MORE</a>
+								<a href="/contact/" class="m-btn">お問い合わせへ</a>
 							</div>
 						</div>
 					</div>
@@ -257,8 +269,9 @@
 			<p class="m-footer-copyright"><small>&copy; PON DESIGN</small></p>
 		</div><!-- ./l-footer-inner -->
 	</footer><!-- ./l-footer -->
-	<p class="m-pagetop is-hide"><button class="js-pagetop" aria-label="pagetopへ戻る"><img src="./assets/img/icon/icon_pagetop.png" alt="pagetopへ戻る" width="50" height="50"></button></p>
-	<script src="./assets//js/index.js"></script>
+	<p class="m-pagetop is-hide"><button class="js-pagetop" aria-label="pagetopへ戻る"><img src="/assets/img/icon/icon_pagetop.png" alt="pagetopへ戻る" width="50" height="50"></button></p>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="/assets//js/index.js"></script>
 </body>
 
 </html>
