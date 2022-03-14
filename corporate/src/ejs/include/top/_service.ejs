@@ -35,7 +35,7 @@
     <% COLUMNITEMS.forEach((elem, index) =>{ %>
     <li class="l-column-list l-column-list-height-ajust" data-col="4" data-col-sp="12">
       <div class="l-media l-media-col">
-        <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="350" height="220" class="m-media-img">
+        <img src="<%- elem.src %>" alt="<%- elem.alt %>" width="350" height="220" class="m-media-img" loading="lazy">
         <dl class="m-media-description m-media-description-col">
           <dt class="m-media-description-title"><%- elem.title %></dt>
           <dd class="m-media-description-txt"><%- elem.txt %></dd>
