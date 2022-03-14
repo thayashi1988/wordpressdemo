@@ -10,6 +10,7 @@ import { Pagetop } from './modules/Pagetop';
 import { HeaderScroll } from './modules/HeaderScroll';
 import { Menu } from './modules/Menu';
 import { TheSwiper } from './modules/TheSwiper';
+import { Form } from './modules/Form';
 // import { UA } from './modules/ua';
 // import { foreachtest } from './modules/foreachtest';
 // import { smoothScroll } from './modules/smoothscroll';
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
   HeaderScroll();
   Menu();
   TheSwiper();
+  Form();
 
   // test($);
   // foreachtest();
